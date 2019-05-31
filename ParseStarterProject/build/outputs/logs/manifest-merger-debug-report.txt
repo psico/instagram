@@ -1,0 +1,95 @@
+-- Merging decision tree log ---
+manifest
+ADDED from D:\Users\joao.rodrigues\AndroidStudioProjects\Parse-Projeto-1.13.0\ParseStarterProject\src\main\AndroidManifest.xml:10:1-40:12
+INJECTED from D:\Users\joao.rodrigues\AndroidStudioProjects\Parse-Projeto-1.13.0\ParseStarterProject\src\main\AndroidManifest.xml:10:1-40:12
+INJECTED from D:\Users\joao.rodrigues\AndroidStudioProjects\Parse-Projeto-1.13.0\ParseStarterProject\src\main\AndroidManifest.xml:10:1-40:12
+INJECTED from D:\Users\joao.rodrigues\AndroidStudioProjects\Parse-Projeto-1.13.0\ParseStarterProject\src\main\AndroidManifest.xml:10:1-40:12
+MERGED from [com.android.support:appcompat-v7:22.2.0] D:\Users\joao.rodrigues\AndroidStudioProjects\Parse-Projeto-1.13.0\.gradle\caches\transforms-2\files-2.1\f188bfd6c0384e1ca0b519dd1cf95ed7\AndroidManifest.xml:17:1-24:12
+MERGED from [com.android.support:support-v4:22.2.0] D:\Users\joao.rodrigues\AndroidStudioProjects\Parse-Projeto-1.13.0\.gradle\caches\transforms-2\files-2.1\16133fc2a693f8dca3f8f3b6de07b179\AndroidManifest.xml:17:1-24:12
+INJECTED from D:\Users\joao.rodrigues\AndroidStudioProjects\Parse-Projeto-1.13.0\ParseStarterProject\src\main\AndroidManifest.xml:10:1-40:12
+INJECTED from D:\Users\joao.rodrigues\AndroidStudioProjects\Parse-Projeto-1.13.0\ParseStarterProject\src\main\AndroidManifest.xml:10:1-40:12
+INJECTED from D:\Users\joao.rodrigues\AndroidStudioProjects\Parse-Projeto-1.13.0\ParseStarterProject\src\main\AndroidManifest.xml:10:1-40:12
+	package
+		ADDED from D:\Users\joao.rodrigues\AndroidStudioProjects\Parse-Projeto-1.13.0\ParseStarterProject\src\main\AndroidManifest.xml:11:5-32
+		INJECTED from D:\Users\joao.rodrigues\AndroidStudioProjects\Parse-Projeto-1.13.0\ParseStarterProject\src\main\AndroidManifest.xml
+		INJECTED from D:\Users\joao.rodrigues\AndroidStudioProjects\Parse-Projeto-1.13.0\ParseStarterProject\src\main\AndroidManifest.xml
+	android:versionName
+		INJECTED from D:\Users\joao.rodrigues\AndroidStudioProjects\Parse-Projeto-1.13.0\ParseStarterProject\src\main\AndroidManifest.xml
+		ADDED from D:\Users\joao.rodrigues\AndroidStudioProjects\Parse-Projeto-1.13.0\ParseStarterProject\src\main\AndroidManifest.xml:10:1-40:12
+		INJECTED from D:\Users\joao.rodrigues\AndroidStudioProjects\Parse-Projeto-1.13.0\ParseStarterProject\src\main\AndroidManifest.xml
+	android:versionCode
+		INJECTED from D:\Users\joao.rodrigues\AndroidStudioProjects\Parse-Projeto-1.13.0\ParseStarterProject\src\main\AndroidManifest.xml
+		ADDED from D:\Users\joao.rodrigues\AndroidStudioProjects\Parse-Projeto-1.13.0\ParseStarterProject\src\main\AndroidManifest.xml:10:1-40:12
+		INJECTED from D:\Users\joao.rodrigues\AndroidStudioProjects\Parse-Projeto-1.13.0\ParseStarterProject\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from D:\Users\joao.rodrigues\AndroidStudioProjects\Parse-Projeto-1.13.0\ParseStarterProject\src\main\AndroidManifest.xml:10:11-69
+uses-permission#android.permission.INTERNET
+ADDED from D:\Users\joao.rodrigues\AndroidStudioProjects\Parse-Projeto-1.13.0\ParseStarterProject\src\main\AndroidManifest.xml:13:5-67
+	android:name
+		ADDED from D:\Users\joao.rodrigues\AndroidStudioProjects\Parse-Projeto-1.13.0\ParseStarterProject\src\main\AndroidManifest.xml:13:22-64
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from D:\Users\joao.rodrigues\AndroidStudioProjects\Parse-Projeto-1.13.0\ParseStarterProject\src\main\AndroidManifest.xml:14:5-79
+	android:name
+		ADDED from D:\Users\joao.rodrigues\AndroidStudioProjects\Parse-Projeto-1.13.0\ParseStarterProject\src\main\AndroidManifest.xml:14:22-76
+application
+ADDED from D:\Users\joao.rodrigues\AndroidStudioProjects\Parse-Projeto-1.13.0\ParseStarterProject\src\main\AndroidManifest.xml:16:5-38:19
+MERGED from [com.android.support:appcompat-v7:22.2.0] D:\Users\joao.rodrigues\AndroidStudioProjects\Parse-Projeto-1.13.0\.gradle\caches\transforms-2\files-2.1\f188bfd6c0384e1ca0b519dd1cf95ed7\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:appcompat-v7:22.2.0] D:\Users\joao.rodrigues\AndroidStudioProjects\Parse-Projeto-1.13.0\.gradle\caches\transforms-2\files-2.1\f188bfd6c0384e1ca0b519dd1cf95ed7\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:support-v4:22.2.0] D:\Users\joao.rodrigues\AndroidStudioProjects\Parse-Projeto-1.13.0\.gradle\caches\transforms-2\files-2.1\16133fc2a693f8dca3f8f3b6de07b179\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:support-v4:22.2.0] D:\Users\joao.rodrigues\AndroidStudioProjects\Parse-Projeto-1.13.0\.gradle\caches\transforms-2\files-2.1\16133fc2a693f8dca3f8f3b6de07b179\AndroidManifest.xml:22:5-20
+	android:label
+		ADDED from D:\Users\joao.rodrigues\AndroidStudioProjects\Parse-Projeto-1.13.0\ParseStarterProject\src\main\AndroidManifest.xml:20:9-41
+	android:icon
+		ADDED from D:\Users\joao.rodrigues\AndroidStudioProjects\Parse-Projeto-1.13.0\ParseStarterProject\src\main\AndroidManifest.xml:19:9-43
+	android:allowBackup
+		ADDED from D:\Users\joao.rodrigues\AndroidStudioProjects\Parse-Projeto-1.13.0\ParseStarterProject\src\main\AndroidManifest.xml:18:9-35
+	android:theme
+		ADDED from D:\Users\joao.rodrigues\AndroidStudioProjects\Parse-Projeto-1.13.0\ParseStarterProject\src\main\AndroidManifest.xml:21:9-40
+	android:name
+		ADDED from D:\Users\joao.rodrigues\AndroidStudioProjects\Parse-Projeto-1.13.0\ParseStarterProject\src\main\AndroidManifest.xml:17:9-43
+meta-data#com.parse.APPLICATION_ID
+ADDED from D:\Users\joao.rodrigues\AndroidStudioProjects\Parse-Projeto-1.13.0\ParseStarterProject\src\main\AndroidManifest.xml:22:9-24:52
+	android:value
+		ADDED from D:\Users\joao.rodrigues\AndroidStudioProjects\Parse-Projeto-1.13.0\ParseStarterProject\src\main\AndroidManifest.xml:24:13-49
+	android:name
+		ADDED from D:\Users\joao.rodrigues\AndroidStudioProjects\Parse-Projeto-1.13.0\ParseStarterProject\src\main\AndroidManifest.xml:23:13-52
+meta-data#com.parse.CLIENT_KEY
+ADDED from D:\Users\joao.rodrigues\AndroidStudioProjects\Parse-Projeto-1.13.0\ParseStarterProject\src\main\AndroidManifest.xml:25:9-27:56
+	android:value
+		ADDED from D:\Users\joao.rodrigues\AndroidStudioProjects\Parse-Projeto-1.13.0\ParseStarterProject\src\main\AndroidManifest.xml:27:13-53
+	android:name
+		ADDED from D:\Users\joao.rodrigues\AndroidStudioProjects\Parse-Projeto-1.13.0\ParseStarterProject\src\main\AndroidManifest.xml:26:13-48
+activity#com.parse.starter.MainActivity
+ADDED from D:\Users\joao.rodrigues\AndroidStudioProjects\Parse-Projeto-1.13.0\ParseStarterProject\src\main\AndroidManifest.xml:29:9-37:20
+	android:label
+		ADDED from D:\Users\joao.rodrigues\AndroidStudioProjects\Parse-Projeto-1.13.0\ParseStarterProject\src\main\AndroidManifest.xml:31:13-45
+	android:name
+		ADDED from D:\Users\joao.rodrigues\AndroidStudioProjects\Parse-Projeto-1.13.0\ParseStarterProject\src\main\AndroidManifest.xml:30:13-41
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from D:\Users\joao.rodrigues\AndroidStudioProjects\Parse-Projeto-1.13.0\ParseStarterProject\src\main\AndroidManifest.xml:32:13-36:29
+action#android.intent.action.MAIN
+ADDED from D:\Users\joao.rodrigues\AndroidStudioProjects\Parse-Projeto-1.13.0\ParseStarterProject\src\main\AndroidManifest.xml:33:17-69
+	android:name
+		ADDED from D:\Users\joao.rodrigues\AndroidStudioProjects\Parse-Projeto-1.13.0\ParseStarterProject\src\main\AndroidManifest.xml:33:25-66
+category#android.intent.category.LAUNCHER
+ADDED from D:\Users\joao.rodrigues\AndroidStudioProjects\Parse-Projeto-1.13.0\ParseStarterProject\src\main\AndroidManifest.xml:35:17-77
+	android:name
+		ADDED from D:\Users\joao.rodrigues\AndroidStudioProjects\Parse-Projeto-1.13.0\ParseStarterProject\src\main\AndroidManifest.xml:35:27-74
+uses-sdk
+INJECTED from D:\Users\joao.rodrigues\AndroidStudioProjects\Parse-Projeto-1.13.0\ParseStarterProject\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from D:\Users\joao.rodrigues\AndroidStudioProjects\Parse-Projeto-1.13.0\ParseStarterProject\src\main\AndroidManifest.xml
+INJECTED from D:\Users\joao.rodrigues\AndroidStudioProjects\Parse-Projeto-1.13.0\ParseStarterProject\src\main\AndroidManifest.xml
+MERGED from [com.android.support:appcompat-v7:22.2.0] D:\Users\joao.rodrigues\AndroidStudioProjects\Parse-Projeto-1.13.0\.gradle\caches\transforms-2\files-2.1\f188bfd6c0384e1ca0b519dd1cf95ed7\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:appcompat-v7:22.2.0] D:\Users\joao.rodrigues\AndroidStudioProjects\Parse-Projeto-1.13.0\.gradle\caches\transforms-2\files-2.1\f188bfd6c0384e1ca0b519dd1cf95ed7\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-v4:22.2.0] D:\Users\joao.rodrigues\AndroidStudioProjects\Parse-Projeto-1.13.0\.gradle\caches\transforms-2\files-2.1\16133fc2a693f8dca3f8f3b6de07b179\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-v4:22.2.0] D:\Users\joao.rodrigues\AndroidStudioProjects\Parse-Projeto-1.13.0\.gradle\caches\transforms-2\files-2.1\16133fc2a693f8dca3f8f3b6de07b179\AndroidManifest.xml:20:5-43
+INJECTED from D:\Users\joao.rodrigues\AndroidStudioProjects\Parse-Projeto-1.13.0\ParseStarterProject\src\main\AndroidManifest.xml
+INJECTED from D:\Users\joao.rodrigues\AndroidStudioProjects\Parse-Projeto-1.13.0\ParseStarterProject\src\main\AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from D:\Users\joao.rodrigues\AndroidStudioProjects\Parse-Projeto-1.13.0\ParseStarterProject\src\main\AndroidManifest.xml
+		ADDED from D:\Users\joao.rodrigues\AndroidStudioProjects\Parse-Projeto-1.13.0\ParseStarterProject\src\main\AndroidManifest.xml
+		INJECTED from D:\Users\joao.rodrigues\AndroidStudioProjects\Parse-Projeto-1.13.0\ParseStarterProject\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from D:\Users\joao.rodrigues\AndroidStudioProjects\Parse-Projeto-1.13.0\ParseStarterProject\src\main\AndroidManifest.xml
+		ADDED from D:\Users\joao.rodrigues\AndroidStudioProjects\Parse-Projeto-1.13.0\ParseStarterProject\src\main\AndroidManifest.xml
+		INJECTED from D:\Users\joao.rodrigues\AndroidStudioProjects\Parse-Projeto-1.13.0\ParseStarterProject\src\main\AndroidManifest.xml
