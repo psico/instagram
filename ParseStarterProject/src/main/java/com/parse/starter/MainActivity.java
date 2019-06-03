@@ -17,11 +17,14 @@ import android.view.MenuItem;
 
 import com.parse.FindCallback;
 import com.parse.GetCallback;
+import com.parse.LogInCallback;
 import com.parse.ParseAnalytics;
 import com.parse.ParseException;
 import com.parse.ParseObject;
 import com.parse.ParseQuery;
+import com.parse.ParseUser;
 import com.parse.SaveCallback;
+import com.parse.SignUpCallback;
 
 import java.util.List;
 
@@ -33,57 +36,50 @@ public class MainActivity extends AppCompatActivity {
     super.onCreate(savedInstanceState);
     setContentView(R.layout.activity_main);
 
-    ParseObject pontuacao = new ParseObject("Pontuacao");
-    pontuacao.put("nome", "Romário");
-    pontuacao.put("pontos", 123);
-    pontuacao.saveInBackground(new SaveCallback() {
+    /************************
+     * Cadastro de usuários */
+    ParseUser usuario = new ParseUser();
+    usuario.setUsername("joaogabriel");
+    usuario.setPassword("123456");
+    usuario.setEmail("desenvolvedorjg@gmail.com");
+
+    //Cadastrar
+    usuario.signUpInBackground(new SignUpCallback() {
       @Override
       public void done(ParseException e) {
-        if (e == null) { //não temos erros, pois o objeto está nulo
-          Log.i("salvarPontos", "Dados salvos com sucesso");
+        if (e == null) {
+          Log.i("cadastrarUsuario", "Sucesso ao cadastrar usuario");
         } else {
-          Log.i("salvarPontos", "Erro ao salvos os dados");
+          Log.i("cadastrarUsuario", "Erro ao cadastrar Usuario - " + e.getMessage());
         }
       }
     });
 
-//    ParseQuery<ParseObject> consulta = ParseQuery.getQuery("Pontuacao");
-//    consulta.getInBackground("GJV9KGEqs7", new GetCallback<ParseObject>() {
-//      @Override
-//      public void done(ParseObject object, ParseException e) {
-//
-//        if (e == null) { //não temos erros, pois o objeto está nulo
-//
-//          object.put("pontos", 600);
-//          object.saveInBackground();
-//
-//        } else {
-//          Log.i("consultaObjeto", "Erro ao consultar objeto");
-//        }
-//      }
-//
-//    });
+    /****************************
+     * Verificar usuário logado */
+    //Deslogar
+//    ParseUser.logOut();
 
-    ParseQuery<ParseObject> filtro = ParseQuery.getQuery("Pontuacao");
+    //Verifica logado
+//    if (ParseUser.getCurrentUser() != null) { //logado
+//      Log.i("LoginUsuario", "Usuário logado");
+//    } else {
+//      Log.i("LoginUsuario", "Usuário não está logado");
+//    }
 
-    //Aplicando filtros na listagem de objetos
-    filtro.addAscendingOrder("pontos");
-    filtro.setLimit(3);
-
-    //Listar os dados
-    filtro.findInBackground(new FindCallback<ParseObject>() {
+    /**************************
+     * Fazer login do usuário */
+    ParseUser.logInInBackground("joaogabriel", "123456", new LogInCallback() {
       @Override
-      public void done(List<ParseObject> objects, ParseException e) {
-
-        if (e == null) { //não temos erros, pois o objeto está nulo
-          for ( ParseObject object:objects) {
-            Log.i("ListarDados", "Objetos - " + object.get("nome") + " pontos: " + object.get("pontos"));
-          }
+      public void done(ParseUser user, ParseException e) {
+        if (e == null) {
+          Log.i("verificaLoginUsuario", "Login realizado com sucesso");
         } else {
-          Log.i("ListarDados", "Erro ao salvos os dados - " + e.getMessage());
+          Log.i("verificaLoginUsuario", "Erro ao fazer login do usuário");
         }
       }
     });
+
 
   }
 
