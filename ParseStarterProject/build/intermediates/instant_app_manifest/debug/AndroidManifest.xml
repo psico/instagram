@@ -1,12 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!--
-  ~ Copyright (c) 2015-present, Parse, LLC.
-  ~ All rights reserved.
-  ~
-  ~ This source code is licensed under the BSD-style license found in the
-  ~ LICENSE file in the root directory of this source tree. An additional grant
-  ~ of patent rights can be found in the PATENTS file in the same directory.
--->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.parse.starter"
     android:targetSandboxVersion="2"
@@ -36,7 +28,7 @@
             android:value="@string/parse_client_key" />
 
         <activity
-            android:name="com.parse.starter.MainActivity"
+            android:name="com.parse.starter.activity.LoginActivity"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -44,6 +36,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name="com.parse.starter.activity.MainActivity" />
 
         <provider
             android:name="com.android.tools.ir.server.InstantRunContentProvider"

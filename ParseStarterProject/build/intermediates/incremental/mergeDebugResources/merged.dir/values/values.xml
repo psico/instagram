@@ -1,8 +1,133 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <attr format="boolean" name="barrierAllowsGoneWidgets"/>
+    <attr format="enum" name="barrierDirection">
+        <enum name="left" value="0"/>
+        <enum name="right" value="1"/>
+        <enum name="top" value="2"/>
+        <enum name="bottom" value="3"/>
+        <enum name="start" value="5"/>
+        <enum name="end" value="6"/>
+    </attr>
+    <attr format="boolean" name="chainUseRtl"/>
+    <attr format="reference" name="constraintSet"/>
+    <attr format="string" name="constraint_referenced_ids"/>
+    <attr format="reference" name="content"/>
     <attr format="reference" name="drawerArrowStyle"/>
+    <attr name="emptyVisibility">
+        <enum name="gone" value="0"/>
+        <enum name="invisible" value="1"/>
+    </attr>
     <attr format="dimension" name="height"/>
     <attr format="boolean" name="isLightTheme"/>
+    <attr format="boolean" name="layout_constrainedHeight"/>
+    <attr format="boolean" name="layout_constrainedWidth"/>
+    <attr format="integer" name="layout_constraintBaseline_creator"/>
+    <attr format="reference|enum" name="layout_constraintBaseline_toBaselineOf">
+        <enum name="parent" value="0"/>
+    </attr>
+    <attr format="integer" name="layout_constraintBottom_creator"/>
+    <attr format="reference|enum" name="layout_constraintBottom_toBottomOf">
+        <enum name="parent" value="0"/>
+    </attr>
+    <attr format="reference|enum" name="layout_constraintBottom_toTopOf">
+        <enum name="parent" value="0"/>
+    </attr>
+    <attr format="reference" name="layout_constraintCircle"/>
+    <attr format="integer" name="layout_constraintCircleAngle"/>
+    <attr format="dimension" name="layout_constraintCircleRadius"/>
+    <attr format="string" name="layout_constraintDimensionRatio"/>
+    <attr format="reference|enum" name="layout_constraintEnd_toEndOf">
+        <enum name="parent" value="0"/>
+    </attr>
+    <attr format="reference|enum" name="layout_constraintEnd_toStartOf">
+        <enum name="parent" value="0"/>
+    </attr>
+    <attr format="dimension" name="layout_constraintGuide_begin"/>
+    <attr format="dimension" name="layout_constraintGuide_end"/>
+    <attr format="float" name="layout_constraintGuide_percent"/>
+    <attr name="layout_constraintHeight_default">
+        <enum name="spread" value="0"/>
+        <enum name="wrap" value="1"/>
+        <enum name="percent" value="2"/>
+    </attr>
+    <attr format="dimension|enum" name="layout_constraintHeight_max">
+        <enum name="wrap" value="-2"/>
+    </attr>
+    <attr format="dimension|enum" name="layout_constraintHeight_min">
+        <enum name="wrap" value="-2"/>
+    </attr>
+    <attr format="float" name="layout_constraintHeight_percent"/>
+    <attr format="float" name="layout_constraintHorizontal_bias"/>
+    <attr format="enum" name="layout_constraintHorizontal_chainStyle">
+        <enum name="spread" value="0"/>
+        <enum name="spread_inside" value="1"/>
+        <enum name="packed" value="2"/>
+    </attr>
+    <attr format="float" name="layout_constraintHorizontal_weight"/>
+    <attr format="integer" name="layout_constraintLeft_creator"/>
+    <attr format="reference|enum" name="layout_constraintLeft_toLeftOf">
+        <enum name="parent" value="0"/>
+    </attr>
+    <attr format="reference|enum" name="layout_constraintLeft_toRightOf">
+        <enum name="parent" value="0"/>
+    </attr>
+    <attr format="integer" name="layout_constraintRight_creator"/>
+    <attr format="reference|enum" name="layout_constraintRight_toLeftOf">
+        <enum name="parent" value="0"/>
+    </attr>
+    <attr format="reference|enum" name="layout_constraintRight_toRightOf">
+        <enum name="parent" value="0"/>
+    </attr>
+    <attr format="reference|enum" name="layout_constraintStart_toEndOf">
+        <enum name="parent" value="0"/>
+    </attr>
+    <attr format="reference|enum" name="layout_constraintStart_toStartOf">
+        <enum name="parent" value="0"/>
+    </attr>
+    <attr format="integer" name="layout_constraintTop_creator"/>
+    <attr format="reference|enum" name="layout_constraintTop_toBottomOf">
+        <enum name="parent" value="0"/>
+    </attr>
+    <attr format="reference|enum" name="layout_constraintTop_toTopOf">
+        <enum name="parent" value="0"/>
+    </attr>
+    <attr format="float" name="layout_constraintVertical_bias"/>
+    <attr format="enum" name="layout_constraintVertical_chainStyle">
+        <enum name="spread" value="0"/>
+        <enum name="spread_inside" value="1"/>
+        <enum name="packed" value="2"/>
+    </attr>
+    <attr format="float" name="layout_constraintVertical_weight"/>
+    <attr name="layout_constraintWidth_default">
+        <enum name="spread" value="0"/>
+        <enum name="wrap" value="1"/>
+        <enum name="percent" value="2"/>
+    </attr>
+    <attr format="dimension|enum" name="layout_constraintWidth_max">
+        <enum name="wrap" value="-2"/>
+    </attr>
+    <attr format="dimension|enum" name="layout_constraintWidth_min">
+        <enum name="wrap" value="-2"/>
+    </attr>
+    <attr format="float" name="layout_constraintWidth_percent"/>
+    <attr format="dimension" name="layout_editor_absoluteX"/>
+    <attr format="dimension" name="layout_editor_absoluteY"/>
+    <attr format="dimension" name="layout_goneMarginBottom"/>
+    <attr format="dimension" name="layout_goneMarginEnd"/>
+    <attr format="dimension" name="layout_goneMarginLeft"/>
+    <attr format="dimension" name="layout_goneMarginRight"/>
+    <attr format="dimension" name="layout_goneMarginStart"/>
+    <attr format="dimension" name="layout_goneMarginTop"/>
+    <attr name="layout_optimizationLevel">
+        <flag name="none" value="0"/>
+        <flag name="standard" value="7"/> 
+        <flag name="direct" value="1"/>
+        <flag name="barrier" value="2"/>
+        <flag name="chains" value="4"/>
+        <flag name="dimensions" value="8"/>
+        <flag name="groups" value="32"/>
+    </attr>
     <attr format="string" name="title"/>
     <bool name="abc_action_bar_embed_tabs">true</bool>
     <bool name="abc_action_bar_embed_tabs_pre_jb">false</bool>
@@ -130,6 +255,7 @@
     <item name="dialog_fixed_width_minor" type="dimen">320dp</item>
     <item format="float" name="disabled_alpha_material_dark" type="dimen">0.30</item>
     <item format="float" name="disabled_alpha_material_light" type="dimen">0.26</item>
+    <dimen name="item_touch_helper_max_drag_scroll_per_frame">20dp</dimen>
     <dimen name="notification_large_icon_height">64dp</dimen>
     <dimen name="notification_large_icon_width">64dp</dimen>
     <dimen name="notification_subtext_size">12dp</dimen>
@@ -139,6 +265,7 @@
     <item name="action_menu_divider" type="id"/>
     <item name="action_menu_presenter" type="id"/>
     <item name="home" type="id"/>
+    <item name="item_touch_helper_previous_elevation" type="id"/>
     <item name="progress_circular" type="id"/>
     <item name="progress_horizontal" type="id"/>
     <item name="split_action_bar" type="id"/>
@@ -166,8 +293,13 @@
     <string name="abc_shareactionprovider_share_with_application">Share with %s</string>
     <string name="abc_toolbar_collapse_description">Collapse</string>
     <string name="action_settings">Settings</string>
-    <string name="app_name">Parse Starter Project</string>
+    <string name="app_name">Instagram</string>
+    <string name="botao_logar">Logar</string>
+    <string name="crie_conta">Não tem conta? crie uma!</string>
+    <string name="digite_a_sua_senha">Digite a sua senha</string>
+    <string name="digite_o_seu_usu_rio">Digite o seu usuário</string>
     <string name="hello_world">Hello World!</string>
+    <string name="logo_instagram">Logo Instagram</string>
     <string name="parse_app_id">YOUR_APPLICATION_ID</string>
     <string name="parse_client_key">YOUR_CLIENT_KEY</string>
     <string name="status_bar_notification_info_overflow">999+</string>
@@ -175,8 +307,9 @@
     <style name="AlertDialog.AppCompat.Light" parent="Base.AlertDialog.AppCompat.Light"/>
     <style name="Animation.AppCompat.Dialog" parent="Base.Animation.AppCompat.Dialog"/>
     <style name="Animation.AppCompat.DropDownUp" parent="Base.Animation.AppCompat.DropDownUp"/>
-    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
-        <!-- Customize your theme here. -->
+    <style name="AppTheme" parent="Theme.AppCompat.NoActionBar">
+        
+        <item name="android:windowBackground">@android:color/white</item>
     </style>
     <style name="Base.AlertDialog.AppCompat" parent="android:Widget">
         <item name="android:layout">@layout/abc_alert_dialog_material</item>
@@ -382,7 +515,7 @@
         <item name="actionBarWidgetTheme">@null</item>
         <item name="actionBarTheme">@style/ThemeOverlay.AppCompat.Dark.ActionBar</item>
 
-        <!-- Panel attributes -->
+        
         <item name="listChoiceBackgroundIndicator">@drawable/abc_list_selector_holo_dark</item>
 
         <item name="colorPrimaryDark">@color/primary_dark_material_dark</item>
@@ -433,7 +566,7 @@
         <item name="colorButtonNormal">@color/button_material_dark</item>
         <item name="colorSwitchThumbNormal">@color/switch_thumb_material_dark</item>
 
-        <!-- Used by MediaRouter -->
+        
         <item name="isLightTheme">false</item>
     </style>
     <style name="Base.ThemeOverlay.AppCompat.Dark.ActionBar">
@@ -465,14 +598,14 @@
         <item name="colorButtonNormal">@color/button_material_light</item>
         <item name="colorSwitchThumbNormal">@color/switch_thumb_material_light</item>
 
-        <!-- Used by MediaRouter -->
+        
         <item name="isLightTheme">true</item>
     </style>
     <style name="Base.V7.Theme.AppCompat" parent="Platform.AppCompat">
         <item name="windowActionBar">true</item>
         <item name="windowActionBarOverlay">false</item>
 
-        <!-- Used by MediaRouter -->
+        
         <item name="isLightTheme">false</item>
 
         <item name="selectableItemBackground">@drawable/abc_item_background_holo_dark</item>
@@ -483,7 +616,7 @@
         <item name="dividerVertical">@drawable/abc_list_divider_mtrl_alpha</item>
         <item name="dividerHorizontal">@drawable/abc_list_divider_mtrl_alpha</item>
 
-        <!-- Action Bar Styles -->
+        
         <item name="actionBarTabStyle">@style/Widget.AppCompat.ActionBar.TabView</item>
         <item name="actionBarTabBarStyle">@style/Widget.AppCompat.ActionBar.TabBar</item>
         <item name="actionBarTabTextStyle">@style/Widget.AppCompat.ActionBar.TabText</item>
@@ -500,10 +633,10 @@
         <item name="actionMenuTextAppearance">@style/TextAppearance.AppCompat.Widget.ActionBar.Menu</item>
         <item name="actionMenuTextColor">?android:attr/textColorPrimaryDisableOnly</item>
 
-        <!-- Dropdown Spinner Attributes -->
+        
         <item name="actionDropDownStyle">@style/Widget.AppCompat.Spinner.DropDown.ActionBar</item>
 
-        <!-- Action Mode -->
+        
         <item name="actionModeStyle">@style/Widget.AppCompat.ActionMode</item>
         <item name="actionModeBackground">@drawable/abc_cab_background_top_material</item>
         <item name="actionModeSplitBackground">?attr/colorPrimaryDark</item>
@@ -516,14 +649,14 @@
         <item name="actionModeSelectAllDrawable">@drawable/abc_ic_menu_selectall_mtrl_alpha</item>
         <item name="actionModeShareDrawable">@drawable/abc_ic_menu_share_mtrl_alpha</item>
 
-        <!-- Panel attributes -->
+        
         <item name="panelMenuListWidth">@dimen/abc_panel_menu_list_width</item>
         <item name="panelMenuListTheme">@style/Theme.AppCompat.CompactMenu</item>
         <item name="panelBackground">@drawable/abc_menu_hardkey_panel_mtrl_mult</item>
         <item name="android:panelBackground">@android:color/transparent</item>
         <item name="listChoiceBackgroundIndicator">@drawable/abc_list_selector_holo_dark</item>
 
-        <!-- List attributes -->
+        
         <item name="textAppearanceListItem">@style/TextAppearance.AppCompat.Subhead</item>
         <item name="textAppearanceListItemSmall">@style/TextAppearance.AppCompat.Subhead</item>
         <item name="listPreferredItemHeight">64dp</item>
@@ -532,33 +665,33 @@
         <item name="listPreferredItemPaddingLeft">@dimen/abc_list_item_padding_horizontal_material</item>
         <item name="listPreferredItemPaddingRight">@dimen/abc_list_item_padding_horizontal_material</item>
 
-        <!-- Spinner styles -->
+        
         <item name="spinnerStyle">@style/Widget.AppCompat.Spinner</item>
         <item name="android:spinnerItemStyle">@style/Widget.AppCompat.TextView.SpinnerItem</item>
         <item name="android:dropDownListViewStyle">@style/Widget.AppCompat.ListView.DropDown</item>
 
-        <!-- Required for use of support_simple_spinner_dropdown_item.xml -->
+        
         <item name="spinnerDropDownItemStyle">@style/Widget.AppCompat.DropDownItem.Spinner</item>
         <item name="dropdownListPreferredItemHeight">?attr/listPreferredItemHeightSmall</item>
 
-        <!-- Popup Menu styles -->
+        
         <item name="popupMenuStyle">@style/Widget.AppCompat.PopupMenu</item>
         <item name="textAppearanceLargePopupMenu">@style/TextAppearance.AppCompat.Widget.PopupMenu.Large</item>
         <item name="textAppearanceSmallPopupMenu">@style/TextAppearance.AppCompat.Widget.PopupMenu.Small</item>
         <item name="listPopupWindowStyle">@style/Widget.AppCompat.ListPopupWindow</item>
         <item name="dropDownListViewStyle">@style/Widget.AppCompat.ListView.DropDown</item>
 
-        <!-- SearchView attributes -->
+        
         <item name="searchViewStyle">@style/Widget.AppCompat.SearchView</item>
         <item name="android:dropDownItemStyle">@style/Widget.AppCompat.DropDownItem.Spinner</item>
         <item name="textColorSearchUrl">@color/abc_search_url_text</item>
         <item name="textAppearanceSearchResultTitle">@style/TextAppearance.AppCompat.SearchResult.Title</item>
         <item name="textAppearanceSearchResultSubtitle">@style/TextAppearance.AppCompat.SearchResult.Subtitle</item>
 
-        <!-- ShareActionProvider attributes -->
+        
         <item name="activityChooserViewStyle">@style/Widget.AppCompat.ActivityChooserView</item>
 
-        <!-- Toolbar styles -->
+        
         <item name="toolbarStyle">@style/Widget.AppCompat.Toolbar</item>
         <item name="toolbarNavigationButtonStyle">@style/Widget.AppCompat.Toolbar.Button.Navigation</item>
 
@@ -567,7 +700,7 @@
         <item name="editTextColor">?android:attr/textColorPrimary</item>
         <item name="autoCompleteTextViewStyle">@style/Widget.AppCompat.AutoCompleteTextView</item>
 
-        <!-- Color palette -->
+        
         <item name="colorPrimaryDark">@color/primary_dark_material_dark</item>
         <item name="colorPrimary">@color/primary_material_dark</item>
         <item name="colorAccent">@color/accent_material_dark</item>
@@ -586,7 +719,7 @@
 
         <item name="ratingBarStyle">@style/Widget.AppCompat.RatingBar</item>
 
-        <!-- Button styles -->
+        
         <item name="buttonStyle">@style/Widget.AppCompat.Button</item>
         <item name="buttonStyleSmall">@style/Widget.AppCompat.Button.Small</item>
         <item name="android:textAppearanceButton">@style/TextAppearance.AppCompat.Button</item>
@@ -597,7 +730,7 @@
         <item name="buttonBarNegativeButtonStyle">?attr/buttonBarButtonStyle</item>
         <item name="buttonBarNeutralButtonStyle">?attr/buttonBarButtonStyle</item>
 
-        <!-- Dialog attributes -->
+        
         <item name="dialogTheme">@style/Theme.AppCompat.Dialog</item>
         <item name="dialogPreferredPadding">@dimen/abc_dialog_padding_material</item>
 
@@ -607,8 +740,7 @@
         <item name="textColorAlertDialogListItem">@color/abc_primary_text_material_dark</item>
         <item name="listDividerAlertDialog">@null</item>
 
-        <!-- Define these here; ContextThemeWrappers around themes that define them should
-             always clear these values. -->
+        
         <item name="windowFixedWidthMajor">0dp</item>
         <item name="windowFixedWidthMinor">0dp</item>
         <item name="windowFixedHeightMajor">0dp</item>
@@ -640,7 +772,7 @@
         <item name="windowActionBar">true</item>
         <item name="windowActionBarOverlay">false</item>
 
-        <!-- Used by MediaRouter -->
+        
         <item name="isLightTheme">true</item>
 
         <item name="selectableItemBackground">@drawable/abc_item_background_holo_light</item>
@@ -651,7 +783,7 @@
         <item name="dividerVertical">@drawable/abc_list_divider_mtrl_alpha</item>
         <item name="dividerHorizontal">@drawable/abc_list_divider_mtrl_alpha</item>
 
-        <!-- Action Bar Styles -->
+        
         <item name="actionBarTabStyle">@style/Widget.AppCompat.Light.ActionBar.TabView</item>
         <item name="actionBarTabBarStyle">@style/Widget.AppCompat.Light.ActionBar.TabBar</item>
         <item name="actionBarTabTextStyle">@style/Widget.AppCompat.Light.ActionBar.TabText</item>
@@ -668,7 +800,7 @@
         <item name="actionMenuTextAppearance">@style/TextAppearance.AppCompat.Widget.ActionBar.Menu</item>
         <item name="actionMenuTextColor">?android:attr/textColorPrimaryDisableOnly</item>
 
-        <!-- Action Mode -->
+        
         <item name="actionModeStyle">@style/Widget.AppCompat.ActionMode</item>
         <item name="actionModeBackground">@drawable/abc_cab_background_top_material</item>
         <item name="actionModeSplitBackground">?attr/colorPrimaryDark</item>
@@ -681,17 +813,17 @@
         <item name="actionModeSelectAllDrawable">@drawable/abc_ic_menu_selectall_mtrl_alpha</item>
         <item name="actionModeShareDrawable">@drawable/abc_ic_menu_share_mtrl_alpha</item>
 
-        <!-- Dropdown Spinner Attributes -->
+        
         <item name="actionDropDownStyle">@style/Widget.AppCompat.Light.Spinner.DropDown.ActionBar</item>
 
-        <!-- Panel attributes -->
+        
         <item name="panelMenuListWidth">@dimen/abc_panel_menu_list_width</item>
         <item name="panelMenuListTheme">@style/Theme.AppCompat.CompactMenu</item>
         <item name="panelBackground">@drawable/abc_menu_hardkey_panel_mtrl_mult</item>
         <item name="android:panelBackground">@android:color/transparent</item>
         <item name="listChoiceBackgroundIndicator">@drawable/abc_list_selector_holo_light</item>
 
-        <!-- List attributes -->
+        
         <item name="textAppearanceListItem">@style/TextAppearance.AppCompat.Subhead</item>
         <item name="textAppearanceListItemSmall">@style/TextAppearance.AppCompat.Subhead</item>
         <item name="listPreferredItemHeight">64dp</item>
@@ -700,33 +832,33 @@
         <item name="listPreferredItemPaddingLeft">@dimen/abc_list_item_padding_horizontal_material</item>
         <item name="listPreferredItemPaddingRight">@dimen/abc_list_item_padding_horizontal_material</item>
 
-        <!-- Spinner styles -->
+        
         <item name="spinnerStyle">@style/Widget.AppCompat.Spinner</item>
         <item name="android:spinnerItemStyle">@style/Widget.AppCompat.TextView.SpinnerItem</item>
         <item name="android:dropDownListViewStyle">@style/Widget.AppCompat.ListView.DropDown</item>
 
-        <!-- Required for use of support_simple_spinner_dropdown_item.xml -->
+        
         <item name="spinnerDropDownItemStyle">@style/Widget.AppCompat.DropDownItem.Spinner</item>
         <item name="dropdownListPreferredItemHeight">?attr/listPreferredItemHeightSmall</item>
 
-        <!-- Popup Menu styles -->
+        
         <item name="popupMenuStyle">@style/Widget.AppCompat.Light.PopupMenu</item>
         <item name="textAppearanceLargePopupMenu">@style/TextAppearance.AppCompat.Light.Widget.PopupMenu.Large</item>
         <item name="textAppearanceSmallPopupMenu">@style/TextAppearance.AppCompat.Light.Widget.PopupMenu.Small</item>
         <item name="listPopupWindowStyle">@style/Widget.AppCompat.ListPopupWindow</item>
         <item name="dropDownListViewStyle">@style/Widget.AppCompat.ListView.DropDown</item>
 
-        <!-- SearchView attributes -->
+        
         <item name="searchViewStyle">@style/Widget.AppCompat.Light.SearchView</item>
         <item name="android:dropDownItemStyle">@style/Widget.AppCompat.DropDownItem.Spinner</item>
         <item name="textColorSearchUrl">@color/abc_search_url_text</item>
         <item name="textAppearanceSearchResultTitle">@style/TextAppearance.AppCompat.SearchResult.Title</item>
         <item name="textAppearanceSearchResultSubtitle">@style/TextAppearance.AppCompat.SearchResult.Subtitle</item>
 
-        <!-- ShareActionProvider attributes -->
+        
         <item name="activityChooserViewStyle">@style/Widget.AppCompat.ActivityChooserView</item>
 
-        <!-- Toolbar styles -->
+        
         <item name="toolbarStyle">@style/Widget.AppCompat.Toolbar</item>
         <item name="toolbarNavigationButtonStyle">@style/Widget.AppCompat.Toolbar.Button.Navigation</item>
 
@@ -735,7 +867,7 @@
         <item name="editTextColor">?android:attr/textColorPrimary</item>
         <item name="autoCompleteTextViewStyle">@style/Widget.AppCompat.AutoCompleteTextView</item>
 
-        <!-- Color palette -->
+        
         <item name="colorPrimaryDark">@color/primary_dark_material_light</item>
         <item name="colorPrimary">@color/primary_material_light</item>
         <item name="colorAccent">@color/accent_material_light</item>
@@ -754,7 +886,7 @@
 
         <item name="ratingBarStyle">@style/Widget.AppCompat.RatingBar</item>
 
-        <!-- Button styles -->
+        
         <item name="buttonStyle">@style/Widget.AppCompat.Button</item>
         <item name="buttonStyleSmall">@style/Widget.AppCompat.Button.Small</item>
         <item name="android:textAppearanceButton">@style/TextAppearance.AppCompat.Button</item>
@@ -765,7 +897,7 @@
         <item name="buttonBarNegativeButtonStyle">?attr/buttonBarButtonStyle</item>
         <item name="buttonBarNeutralButtonStyle">?attr/buttonBarButtonStyle</item>
 
-        <!-- Dialog attributes -->
+        
         <item name="dialogTheme">@style/Theme.AppCompat.Light.Dialog</item>
         <item name="dialogPreferredPadding">@dimen/abc_dialog_padding_material</item>
 
@@ -775,8 +907,7 @@
         <item name="textColorAlertDialogListItem">@color/abc_primary_text_material_light</item>
         <item name="listDividerAlertDialog">@null</item>
 
-        <!-- Define these here; ContextThemeWrappers around themes that define them should
-             always clear these values. -->
+        
         <item name="windowFixedWidthMajor">0dp</item>
         <item name="windowFixedWidthMinor">0dp</item>
         <item name="windowFixedHeightMajor">0dp</item>
@@ -1095,7 +1226,7 @@
     <style name="Platform.AppCompat" parent="android:Theme">
         <item name="android:windowNoTitle">true</item>
 
-        <!-- Window colors -->
+        
         <item name="android:colorForeground">@color/bright_foreground_material_dark</item>
         <item name="android:colorForegroundInverse">@color/bright_foreground_material_light</item>
         <item name="android:colorBackground">@color/background_material_dark</item>
@@ -1104,7 +1235,7 @@
         <item name="android:backgroundDimAmount">0.6</item>
         <item name="android:windowBackground">@color/background_material_dark</item>
 
-        <!-- Text colors -->
+        
         <item name="android:textColorPrimary">@color/abc_primary_text_material_dark</item>
         <item name="android:textColorPrimaryInverse">@color/abc_primary_text_material_light</item>
         <item name="android:textColorPrimaryDisableOnly">@color/abc_primary_text_disable_only_material_dark</item>
@@ -1117,7 +1248,7 @@
         <item name="android:textColorHighlight">@color/highlighted_text_material_dark</item>
         <item name="android:textColorLink">@color/link_text_material_dark</item>
 
-        <!-- Text styles -->
+        
         <item name="android:textAppearance">@style/TextAppearance.AppCompat</item>
         <item name="android:textAppearanceInverse">@style/TextAppearance.AppCompat.Inverse</item>
         <item name="android:textAppearanceLarge">@style/TextAppearance.AppCompat.Large</item>
@@ -1133,7 +1264,7 @@
     <style name="Platform.AppCompat.Light" parent="android:Theme.Light">
         <item name="android:windowNoTitle">true</item>
 
-        <!-- Window colors -->
+        
         <item name="android:colorForeground">@color/bright_foreground_material_light</item>
         <item name="android:colorForegroundInverse">@color/bright_foreground_material_dark</item>
         <item name="android:colorBackground">@color/background_material_light</item>
@@ -1142,7 +1273,7 @@
         <item name="android:backgroundDimAmount">0.6</item>
         <item name="android:windowBackground">@color/background_material_light</item>
 
-        <!-- Text colors -->
+        
         <item name="android:textColorPrimary">@color/abc_primary_text_material_light</item>
         <item name="android:textColorPrimaryInverse">@color/abc_primary_text_material_dark</item>
         <item name="android:textColorSecondary">@color/abc_secondary_text_material_light</item>
@@ -1156,7 +1287,7 @@
         <item name="android:textColorHighlight">@color/highlighted_text_material_light</item>
         <item name="android:textColorLink">@color/link_text_material_light</item>
 
-        <!-- Text styles -->
+        
         <item name="android:textAppearance">@style/TextAppearance.AppCompat</item>
         <item name="android:textAppearanceInverse">@style/TextAppearance.AppCompat.Inverse</item>
         <item name="android:textAppearanceLarge">@style/TextAppearance.AppCompat.Large</item>
@@ -1170,12 +1301,12 @@
         <item name="android:listChoiceIndicatorMultiple">@drawable/abc_btn_check_material</item>
     </style>
     <style name="Platform.ThemeOverlay.AppCompat.Dark" parent="">
-        <!-- Action Bar styles -->
+        
         <item name="actionBarItemBackground">@drawable/abc_item_background_holo_dark</item>
         <item name="actionDropDownStyle">@style/Widget.AppCompat.Spinner.DropDown.ActionBar</item>
         <item name="selectableItemBackground">@drawable/abc_item_background_holo_dark</item>
 
-        <!-- SearchView styles -->
+        
         <item name="android:autoCompleteTextViewStyle">@style/Widget.AppCompat.AutoCompleteTextView</item>
         <item name="android:dropDownItemStyle">@style/Widget.AppCompat.DropDownItem.Spinner</item>
     </style>
@@ -1184,7 +1315,7 @@
         <item name="actionDropDownStyle">@style/Widget.AppCompat.Light.Spinner.DropDown.ActionBar</item>
         <item name="selectableItemBackground">@drawable/abc_item_background_holo_light</item>
 
-        <!-- SearchView attributes -->
+        
         <item name="android:autoCompleteTextViewStyle">@style/Widget.AppCompat.Light.AutoCompleteTextView</item>
         <item name="android:dropDownItemStyle">@style/Widget.AppCompat.DropDownItem.Spinner</item>
     </style>
@@ -1426,7 +1557,11 @@
     <declare-styleable name="ActivityChooserView"><attr format="string" name="initialActivityCount"/><attr format="reference" name="expandActivityOverflowButtonDrawable"/></declare-styleable>
     <declare-styleable name="AlertDialog"><attr name="android:layout"/><attr format="reference" name="buttonPanelSideLayout"/><attr format="reference" name="listLayout"/><attr format="reference" name="multiChoiceItemLayout"/><attr format="reference" name="singleChoiceItemLayout"/><attr format="reference" name="listItemLayout"/></declare-styleable>
     <declare-styleable name="AppCompatTextView"><attr format="reference|boolean" name="textAllCaps"/><attr name="android:textAppearance"/></declare-styleable>
+    <declare-styleable name="ConstraintLayout_Layout"><attr name="android:orientation"/><attr name="android:minWidth"/><attr name="android:minHeight"/><attr name="android:maxWidth"/><attr name="android:maxHeight"/><attr name="layout_optimizationLevel"/><attr name="constraintSet"/><attr name="barrierDirection"/><attr name="barrierAllowsGoneWidgets"/><attr name="constraint_referenced_ids"/><attr name="chainUseRtl"/><attr name="layout_constraintCircle"/><attr name="layout_constraintCircleRadius"/><attr name="layout_constraintCircleAngle"/><attr name="layout_constraintGuide_begin"/><attr name="layout_constraintGuide_end"/><attr name="layout_constraintGuide_percent"/><attr name="layout_constraintLeft_toLeftOf"/><attr name="layout_constraintLeft_toRightOf"/><attr name="layout_constraintRight_toLeftOf"/><attr name="layout_constraintRight_toRightOf"/><attr name="layout_constraintTop_toTopOf"/><attr name="layout_constraintTop_toBottomOf"/><attr name="layout_constraintBottom_toTopOf"/><attr name="layout_constraintBottom_toBottomOf"/><attr name="layout_constraintBaseline_toBaselineOf"/><attr name="layout_constraintStart_toEndOf"/><attr name="layout_constraintStart_toStartOf"/><attr name="layout_constraintEnd_toStartOf"/><attr name="layout_constraintEnd_toEndOf"/><attr name="layout_goneMarginLeft"/><attr name="layout_goneMarginTop"/><attr name="layout_goneMarginRight"/><attr name="layout_goneMarginBottom"/><attr name="layout_goneMarginStart"/><attr name="layout_goneMarginEnd"/><attr name="layout_constrainedWidth"/><attr name="layout_constrainedHeight"/><attr name="layout_constraintHorizontal_bias"/><attr name="layout_constraintVertical_bias"/><attr name="layout_constraintWidth_default"/><attr name="layout_constraintHeight_default"/><attr name="layout_constraintWidth_min"/><attr name="layout_constraintWidth_max"/><attr name="layout_constraintWidth_percent"/><attr name="layout_constraintHeight_min"/><attr name="layout_constraintHeight_max"/><attr name="layout_constraintHeight_percent"/><attr name="layout_constraintLeft_creator"/><attr name="layout_constraintTop_creator"/><attr name="layout_constraintRight_creator"/><attr name="layout_constraintBottom_creator"/><attr name="layout_constraintBaseline_creator"/><attr name="layout_constraintDimensionRatio"/><attr name="layout_constraintHorizontal_weight"/><attr name="layout_constraintVertical_weight"/><attr name="layout_constraintHorizontal_chainStyle"/><attr name="layout_constraintVertical_chainStyle"/><attr name="layout_editor_absoluteX"/><attr name="layout_editor_absoluteY"/></declare-styleable>
+    <declare-styleable name="ConstraintLayout_placeholder"><attr name="emptyVisibility"/><attr name="content"/></declare-styleable>
+    <declare-styleable name="ConstraintSet"><attr name="android:orientation"/><attr name="android:id"/><attr name="android:visibility"/><attr name="android:alpha"/><attr name="android:elevation"/><attr name="android:rotation"/><attr name="android:rotationX"/><attr name="android:rotationY"/><attr name="android:scaleX"/><attr name="android:scaleY"/><attr name="android:transformPivotX"/><attr name="android:transformPivotY"/><attr name="android:translationX"/><attr name="android:translationY"/><attr name="android:translationZ"/><attr name="android:layout_width"/><attr name="android:layout_height"/><attr name="android:layout_marginStart"/><attr name="android:layout_marginBottom"/><attr name="android:layout_marginTop"/><attr name="android:layout_marginEnd"/><attr name="android:layout_marginLeft"/><attr name="android:layout_marginRight"/><attr name="layout_constraintCircle"/><attr name="layout_constraintCircleRadius"/><attr name="layout_constraintCircleAngle"/><attr name="layout_constraintGuide_begin"/><attr name="layout_constraintGuide_end"/><attr name="layout_constraintGuide_percent"/><attr name="layout_constraintLeft_toLeftOf"/><attr name="layout_constraintLeft_toRightOf"/><attr name="layout_constraintRight_toLeftOf"/><attr name="layout_constraintRight_toRightOf"/><attr name="layout_constraintTop_toTopOf"/><attr name="layout_constraintTop_toBottomOf"/><attr name="layout_constraintBottom_toTopOf"/><attr name="layout_constraintBottom_toBottomOf"/><attr name="layout_constraintBaseline_toBaselineOf"/><attr name="layout_constraintStart_toEndOf"/><attr name="layout_constraintStart_toStartOf"/><attr name="layout_constraintEnd_toStartOf"/><attr name="layout_constraintEnd_toEndOf"/><attr name="layout_goneMarginLeft"/><attr name="layout_goneMarginTop"/><attr name="layout_goneMarginRight"/><attr name="layout_goneMarginBottom"/><attr name="layout_goneMarginStart"/><attr name="layout_goneMarginEnd"/><attr name="layout_constrainedWidth"/><attr name="layout_constrainedHeight"/><attr name="layout_constraintHorizontal_bias"/><attr name="layout_constraintVertical_bias"/><attr name="layout_constraintWidth_default"/><attr name="layout_constraintHeight_default"/><attr name="layout_constraintWidth_min"/><attr name="layout_constraintWidth_max"/><attr name="layout_constraintWidth_percent"/><attr name="layout_constraintHeight_min"/><attr name="layout_constraintHeight_max"/><attr name="layout_constraintHeight_percent"/><attr name="layout_constraintLeft_creator"/><attr name="layout_constraintTop_creator"/><attr name="layout_constraintRight_creator"/><attr name="layout_constraintBottom_creator"/><attr name="layout_constraintBaseline_creator"/><attr name="layout_constraintDimensionRatio"/><attr name="layout_constraintHorizontal_weight"/><attr name="layout_constraintVertical_weight"/><attr name="layout_constraintHorizontal_chainStyle"/><attr name="layout_constraintVertical_chainStyle"/><attr name="layout_editor_absoluteX"/><attr name="layout_editor_absoluteY"/><attr name="barrierDirection"/><attr name="constraint_referenced_ids"/><attr name="android:maxHeight"/><attr name="android:maxWidth"/><attr name="android:minHeight"/><attr name="android:minWidth"/><attr name="barrierAllowsGoneWidgets"/><attr name="chainUseRtl"/></declare-styleable>
     <declare-styleable name="DrawerArrowToggle"><attr format="color" name="color"/><attr format="boolean" name="spinBars"/><attr format="dimension" name="drawableSize"/><attr format="dimension" name="gapBetweenBars"/><attr format="dimension" name="topBottomBarArrowSize"/><attr format="dimension" name="middleBarArrowSize"/><attr format="dimension" name="barSize"/><attr format="dimension" name="thickness"/></declare-styleable>
+    <declare-styleable name="LinearConstraintLayout"><attr name="android:orientation"/></declare-styleable>
     <declare-styleable name="LinearLayoutCompat"><attr name="android:orientation"/><attr name="android:gravity"/><attr name="android:baselineAligned"/><attr name="android:baselineAlignedChildIndex"/><attr name="android:weightSum"/><attr format="boolean" name="measureWithLargestChild"/><attr name="divider"/><attr name="showDividers"><flag name="none" value="0"/><flag name="beginning" value="1"/><flag name="middle" value="2"/><flag name="end" value="4"/></attr><attr format="dimension" name="dividerPadding"/></declare-styleable>
     <declare-styleable name="LinearLayoutCompat_Layout"><attr name="android:layout_width"/><attr name="android:layout_height"/><attr name="android:layout_weight"/><attr name="android:layout_gravity"/></declare-styleable>
     <declare-styleable name="ListPopupWindow"><attr name="android:dropDownVerticalOffset"/><attr name="android:dropDownHorizontalOffset"/></declare-styleable>
@@ -1435,6 +1570,7 @@
     <declare-styleable name="MenuView"><attr name="android:itemTextAppearance"/><attr name="android:horizontalDivider"/><attr name="android:verticalDivider"/><attr name="android:headerBackground"/><attr name="android:itemBackground"/><attr name="android:windowAnimationStyle"/><attr name="android:itemIconDisabledAlpha"/><attr format="boolean" name="preserveIconSpacing"/></declare-styleable>
     <declare-styleable name="PopupWindow"><attr format="boolean" name="overlapAnchor"/><attr name="android:popupBackground"/></declare-styleable>
     <declare-styleable name="PopupWindowBackgroundState"><attr format="boolean" name="state_above_anchor"/></declare-styleable>
+    <declare-styleable name="RecyclerView"><attr format="string" name="layoutManager"/><attr name="android:orientation"/><attr format="integer" name="spanCount"/><attr format="boolean" name="reverseLayout"/><attr format="boolean" name="stackFromEnd"/></declare-styleable>
     <declare-styleable name="SearchView"><attr format="reference" name="layout"/><attr format="boolean" name="iconifiedByDefault"/><attr name="android:maxWidth"/><attr format="string" name="queryHint"/><attr format="string" name="defaultQueryHint"/><attr name="android:imeOptions"/><attr name="android:inputType"/><attr format="reference" name="closeIcon"/><attr format="reference" name="goIcon"/><attr format="reference" name="searchIcon"/><attr format="reference" name="searchHintIcon"/><attr format="reference" name="voiceIcon"/><attr format="reference" name="commitIcon"/><attr format="reference" name="suggestionRowLayout"/><attr format="reference" name="queryBackground"/><attr format="reference" name="submitBackground"/><attr name="android:focusable"/></declare-styleable>
     <declare-styleable name="Spinner"><attr format="reference" name="prompt"/><attr format="enum" name="spinnerMode"><enum name="dialog" value="0"/><enum name="dropdown" value="1"/></attr><attr name="android:dropDownSelector"/><attr name="android:popupBackground"/><attr name="android:dropDownVerticalOffset"/><attr name="android:dropDownHorizontalOffset"/><attr name="android:dropDownWidth"/><attr format="reference" name="popupPromptView"/><attr name="android:gravity"/><attr format="boolean" name="disableChildrenWhenDisabled"/><attr name="android:background"/></declare-styleable>
     <declare-styleable name="SwitchCompat"><attr name="android:thumb"/><attr format="reference" name="track"/><attr name="android:textOn"/><attr name="android:textOff"/><attr format="dimension" name="thumbTextPadding"/><attr format="reference" name="switchTextAppearance"/><attr format="dimension" name="switchMinWidth"/><attr format="dimension" name="switchPadding"/><attr format="boolean" name="splitTrack"/><attr format="boolean" name="showText"/></declare-styleable>
