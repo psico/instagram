@@ -19,8 +19,7 @@
             android:layout_alignParentTop="true"
             android:layout_centerHorizontal="true"
             android:background="@drawable/logo"
-            android:contentDescription="@string/logo_instagram"
-            app:srcCompat="@drawable/logo" />
+            android:contentDescription="@string/logo_instagram" />
 
         <EditText
             android:layout_width="match_parent"
