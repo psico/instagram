@@ -51,36 +51,40 @@ MERGED from [com.android.support:support-v4:22.2.0] D:\Users\joao.rodrigues\Andr
 		ADDED from D:\Users\joao.rodrigues\AndroidStudioProjects\Parse-Projeto-1.13.0\ParseStarterProject\src\main\AndroidManifest.xml:13:9-40
 	android:name
 		ADDED from D:\Users\joao.rodrigues\AndroidStudioProjects\Parse-Projeto-1.13.0\ParseStarterProject\src\main\AndroidManifest.xml:9:9-43
+activity#com.parse.starter.activity.CadastroActivity
+ADDED from D:\Users\joao.rodrigues\AndroidStudioProjects\Parse-Projeto-1.13.0\ParseStarterProject\src\main\AndroidManifest.xml:14:9-72
+	android:name
+		ADDED from D:\Users\joao.rodrigues\AndroidStudioProjects\Parse-Projeto-1.13.0\ParseStarterProject\src\main\AndroidManifest.xml:14:19-60
 meta-data#com.parse.APPLICATION_ID
-ADDED from D:\Users\joao.rodrigues\AndroidStudioProjects\Parse-Projeto-1.13.0\ParseStarterProject\src\main\AndroidManifest.xml:15:9-17:52
+ADDED from D:\Users\joao.rodrigues\AndroidStudioProjects\Parse-Projeto-1.13.0\ParseStarterProject\src\main\AndroidManifest.xml:16:9-18:52
 	android:value
-		ADDED from D:\Users\joao.rodrigues\AndroidStudioProjects\Parse-Projeto-1.13.0\ParseStarterProject\src\main\AndroidManifest.xml:17:13-49
+		ADDED from D:\Users\joao.rodrigues\AndroidStudioProjects\Parse-Projeto-1.13.0\ParseStarterProject\src\main\AndroidManifest.xml:18:13-49
 	android:name
-		ADDED from D:\Users\joao.rodrigues\AndroidStudioProjects\Parse-Projeto-1.13.0\ParseStarterProject\src\main\AndroidManifest.xml:16:13-52
+		ADDED from D:\Users\joao.rodrigues\AndroidStudioProjects\Parse-Projeto-1.13.0\ParseStarterProject\src\main\AndroidManifest.xml:17:13-52
 meta-data#com.parse.CLIENT_KEY
-ADDED from D:\Users\joao.rodrigues\AndroidStudioProjects\Parse-Projeto-1.13.0\ParseStarterProject\src\main\AndroidManifest.xml:18:9-20:56
+ADDED from D:\Users\joao.rodrigues\AndroidStudioProjects\Parse-Projeto-1.13.0\ParseStarterProject\src\main\AndroidManifest.xml:19:9-21:56
 	android:value
-		ADDED from D:\Users\joao.rodrigues\AndroidStudioProjects\Parse-Projeto-1.13.0\ParseStarterProject\src\main\AndroidManifest.xml:20:13-53
+		ADDED from D:\Users\joao.rodrigues\AndroidStudioProjects\Parse-Projeto-1.13.0\ParseStarterProject\src\main\AndroidManifest.xml:21:13-53
 	android:name
-		ADDED from D:\Users\joao.rodrigues\AndroidStudioProjects\Parse-Projeto-1.13.0\ParseStarterProject\src\main\AndroidManifest.xml:19:13-48
+		ADDED from D:\Users\joao.rodrigues\AndroidStudioProjects\Parse-Projeto-1.13.0\ParseStarterProject\src\main\AndroidManifest.xml:20:13-48
 activity#com.parse.starter.activity.LoginActivity
-ADDED from D:\Users\joao.rodrigues\AndroidStudioProjects\Parse-Projeto-1.13.0\ParseStarterProject\src\main\AndroidManifest.xml:22:9-30:20
+ADDED from D:\Users\joao.rodrigues\AndroidStudioProjects\Parse-Projeto-1.13.0\ParseStarterProject\src\main\AndroidManifest.xml:23:9-31:20
 	android:label
-		ADDED from D:\Users\joao.rodrigues\AndroidStudioProjects\Parse-Projeto-1.13.0\ParseStarterProject\src\main\AndroidManifest.xml:24:13-45
+		ADDED from D:\Users\joao.rodrigues\AndroidStudioProjects\Parse-Projeto-1.13.0\ParseStarterProject\src\main\AndroidManifest.xml:25:13-45
 	android:name
-		ADDED from D:\Users\joao.rodrigues\AndroidStudioProjects\Parse-Projeto-1.13.0\ParseStarterProject\src\main\AndroidManifest.xml:23:13-51
+		ADDED from D:\Users\joao.rodrigues\AndroidStudioProjects\Parse-Projeto-1.13.0\ParseStarterProject\src\main\AndroidManifest.xml:24:13-51
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from D:\Users\joao.rodrigues\AndroidStudioProjects\Parse-Projeto-1.13.0\ParseStarterProject\src\main\AndroidManifest.xml:25:13-29:29
+ADDED from D:\Users\joao.rodrigues\AndroidStudioProjects\Parse-Projeto-1.13.0\ParseStarterProject\src\main\AndroidManifest.xml:26:13-30:29
 action#android.intent.action.MAIN
-ADDED from D:\Users\joao.rodrigues\AndroidStudioProjects\Parse-Projeto-1.13.0\ParseStarterProject\src\main\AndroidManifest.xml:26:17-69
+ADDED from D:\Users\joao.rodrigues\AndroidStudioProjects\Parse-Projeto-1.13.0\ParseStarterProject\src\main\AndroidManifest.xml:27:17-69
 	android:name
-		ADDED from D:\Users\joao.rodrigues\AndroidStudioProjects\Parse-Projeto-1.13.0\ParseStarterProject\src\main\AndroidManifest.xml:26:25-66
+		ADDED from D:\Users\joao.rodrigues\AndroidStudioProjects\Parse-Projeto-1.13.0\ParseStarterProject\src\main\AndroidManifest.xml:27:25-66
 category#android.intent.category.LAUNCHER
-ADDED from D:\Users\joao.rodrigues\AndroidStudioProjects\Parse-Projeto-1.13.0\ParseStarterProject\src\main\AndroidManifest.xml:28:17-77
+ADDED from D:\Users\joao.rodrigues\AndroidStudioProjects\Parse-Projeto-1.13.0\ParseStarterProject\src\main\AndroidManifest.xml:29:17-77
 	android:name
-		ADDED from D:\Users\joao.rodrigues\AndroidStudioProjects\Parse-Projeto-1.13.0\ParseStarterProject\src\main\AndroidManifest.xml:28:27-74
+		ADDED from D:\Users\joao.rodrigues\AndroidStudioProjects\Parse-Projeto-1.13.0\ParseStarterProject\src\main\AndroidManifest.xml:29:27-74
 activity#com.parse.starter.activity.MainActivity
-ADDED from D:\Users\joao.rodrigues\AndroidStudioProjects\Parse-Projeto-1.13.0\ParseStarterProject\src\main\AndroidManifest.xml:32:9-68
+ADDED from D:\Users\joao.rodrigues\AndroidStudioProjects\Parse-Projeto-1.13.0\ParseStarterProject\src\main\AndroidManifest.xml:32:9-59
 	android:name
 		ADDED from D:\Users\joao.rodrigues\AndroidStudioProjects\Parse-Projeto-1.13.0\ParseStarterProject\src\main\AndroidManifest.xml:32:19-56
 uses-sdk

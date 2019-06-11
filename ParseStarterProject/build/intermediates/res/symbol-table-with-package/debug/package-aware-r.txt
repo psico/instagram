@@ -122,6 +122,7 @@ attr initialActivityCount
 attr isLightTheme
 attr itemPadding
 attr layout
+attr layoutManager
 attr layout_constrainedHeight
 attr layout_constrainedWidth
 attr layout_constraintBaseline_creator
@@ -208,6 +209,7 @@ attr queryBackground
 attr queryHint
 attr radioButtonStyle
 attr ratingBarStyle
+attr reverseLayout
 attr searchHintIcon
 attr searchIcon
 attr searchViewStyle
@@ -217,11 +219,13 @@ attr showAsAction
 attr showDividers
 attr showText
 attr singleChoiceItemLayout
+attr spanCount
 attr spinBars
 attr spinnerDropDownItemStyle
 attr spinnerMode
 attr spinnerStyle
 attr splitTrack
+attr stackFromEnd
 attr state_above_anchor
 attr submitBackground
 attr subtitle
@@ -404,6 +408,7 @@ dimen dialog_fixed_width_major
 dimen dialog_fixed_width_minor
 dimen disabled_alpha_material_dark
 dimen disabled_alpha_material_light
+dimen item_touch_helper_max_drag_scroll_per_frame
 dimen notification_large_icon_height
 dimen notification_large_icon_width
 dimen notification_subtext_size
@@ -466,7 +471,12 @@ drawable abc_textfield_default_mtrl_alpha
 drawable abc_textfield_search_activated_mtrl_alpha
 drawable abc_textfield_search_default_mtrl_alpha
 drawable abc_textfield_search_material
+drawable fundo_botao
+drawable fundo_caixa_texto
+drawable fundo_degrade
+drawable logo
 drawable notification_template_icon_bg
+drawable usuario
 id action0
 id action_bar
 id action_bar_activity_content
@@ -489,6 +499,7 @@ id always
 id barrier
 id beginning
 id bottom
+id button
 id buttonPanel
 id cancel_action
 id chains
@@ -505,6 +516,8 @@ id dimensions
 id direct
 id disableHome
 id dropdown
+id editText
+id editText3
 id edit_query
 id end
 id end_padder
@@ -517,8 +530,10 @@ id homeAsUp
 id icon
 id ifRoom
 id image
+id imageView
 id info
 id invisible
+id item_touch_helper_previous_elevation
 id left
 id line1
 id line3
@@ -569,6 +584,7 @@ id tabMode
 id text
 id text2
 id textSpacerNoButtons
+id textView
 id time
 id title
 id title_template
@@ -644,7 +660,12 @@ string abc_shareactionprovider_share_with_application
 string abc_toolbar_collapse_description
 string action_settings
 string app_name
+string botao_logar
+string crie_conta
+string digite_a_sua_senha
+string digite_o_seu_usu_rio
 string hello_world
+string logo_instagram
 string parse_app_id
 string parse_client_key
 string status_bar_notification_info_overflow
@@ -962,6 +983,7 @@ styleable MenuItem android_icon android_enabled android_id android_checked andro
 styleable MenuView android_windowAnimationStyle android_itemTextAppearance android_horizontalDivider android_verticalDivider android_headerBackground android_itemBackground android_itemIconDisabledAlpha preserveIconSpacing
 styleable PopupWindow android_popupBackground overlapAnchor
 styleable PopupWindowBackgroundState state_above_anchor
+styleable RecyclerView android_orientation layoutManager reverseLayout spanCount stackFromEnd
 styleable SearchView android_focusable android_maxWidth android_inputType android_imeOptions closeIcon commitIcon defaultQueryHint goIcon iconifiedByDefault layout queryBackground queryHint searchHintIcon searchIcon submitBackground suggestionRowLayout voiceIcon
 styleable Spinner android_gravity android_background android_dropDownSelector android_popupBackground android_dropDownWidth android_dropDownHorizontalOffset android_dropDownVerticalOffset disableChildrenWhenDisabled popupPromptView prompt spinnerMode
 styleable SwitchCompat android_textOn android_textOff android_thumb showText splitTrack switchMinWidth switchPadding switchTextAppearance thumbTextPadding track
