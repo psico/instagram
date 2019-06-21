@@ -4,6 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
     android:background="@drawable/fundo_degrade"
     android:gravity="center_vertical|center_horizontal"
     tools:context=".activity.CadastroActivity">
@@ -13,34 +17,35 @@
         android:layout_height="wrap_content">
 
         <ImageView
-            android:id="@+id/imageView"
-            android:layout_width="160dp"
-            android:layout_height="160dp"
+            android:layout_width="150dp"
+            android:layout_height="113dp"
+            android:id="@+id/imageView2"
+            android:background="@drawable/usuario"
             android:layout_alignParentTop="true"
             android:layout_centerHorizontal="true"
-            android:background="@drawable/usuario"
-            android:contentDescription="@string/logo_instagram" />
+            android:contentDescription="@string/logo_instagram"
+            />
 
-        <TextView
-            android:id="@+id/textView2"
+        <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/imageView"
+            android:id="@+id/editText3"
+            android:background="@drawable/fundo_caixa_texto"
+            android:padding="16dp"
+            android:textColor="@android:color/white"
+            android:textColorHint="@android:color/white"
+            android:hint="Digite seu usuário"
+            android:layout_below="@+id/imageView2"
             android:layout_alignParentStart="true"
             android:layout_alignParentLeft="true"
-            android:layout_marginTop="10dp"
-            android:background="@drawable/fundo_caixa_texto"
-            android:inputType=""
-            android:padding="16dp"
-            android:text="Digite seu usuário"
-            android:textColor="@android:color/white"
-            android:textColorHint="@android:color/white" />
+            android:layout_marginTop="25dp"
+            />
 
-        <TextView
+        <EditText
             android:id="@+id/textView3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/textView2"
+            android:layout_below="@+id/editText3"
             android:layout_alignParentStart="true"
             android:layout_alignParentLeft="true"
             android:layout_marginTop="10dp"
@@ -52,7 +57,7 @@
             android:textColorHint="@android:color/white" />
 
         <EditText
-            android:id="@+id/editText4"
+            android:id="@+id/editText5"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@+id/textView3"
@@ -67,17 +72,27 @@
             android:textColorHint="@android:color/white" />
 
         <Button
-            android:id="@+id/button2"
-            android:layout_width="398dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/editText4"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentLeft="true"
-            android:layout_marginStart="13dp"
-            android:layout_marginLeft="13dp"
-            android:layout_marginTop="8dp"
+            android:text="CADASTRAR"
             android:background="@drawable/fundo_botao"
-            android:text="CADASTRAR" />
+            android:id="@+id/button2"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/editText5"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Já tem conta? Faça o login"
+            android:id="@+id/textView2"
+            android:layout_below="@+id/button2"
+            android:layout_centerHorizontal="true"
+            android:onClick="abrirLoginUsuario"
+            />
 
     </RelativeLayout>
 

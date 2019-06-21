@@ -500,6 +500,7 @@ id barrier
 id beginning
 id bottom
 id button
+id button2
 id buttonPanel
 id cancel_action
 id chains
@@ -518,6 +519,7 @@ id disableHome
 id dropdown
 id editText
 id editText3
+id editText5
 id edit_query
 id end
 id end_padder
@@ -531,6 +533,7 @@ id icon
 id ifRoom
 id image
 id imageView
+id imageView2
 id info
 id invisible
 id item_touch_helper_previous_elevation
@@ -585,6 +588,8 @@ id text
 id text2
 id textSpacerNoButtons
 id textView
+id textView2
+id textView3
 id time
 id title
 id title_template
@@ -625,6 +630,7 @@ layout abc_search_dropdown_item_icons_2line
 layout abc_search_view
 layout abc_select_dialog_material
 layout abc_simple_dropdown_hint
+layout activity_cadastro
 layout activity_login
 layout activity_main
 layout notification_media_action
