@@ -499,9 +499,10 @@ id always
 id barrier
 id beginning
 id bottom
-id button
+id button2
 id buttonPanel
 id button_cadastrar
+id button_logar
 id cancel_action
 id chains
 id checkbox
@@ -517,7 +518,8 @@ id dimensions
 id direct
 id disableHome
 id dropdown
-id editText
+id edit_login_senha
+id edit_login_usuario
 id edit_query
 id end
 id end_padder
@@ -586,10 +588,9 @@ id text
 id text2
 id textSpacerNoButtons
 id textView
-id textView2
 id text_email
+id text_faca_login
 id text_senha
-id text_usuario
 id time
 id title
 id title_template

@@ -29,7 +29,7 @@
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/text_usuario"
+            android:id="@+id/edit_login_senha"
             android:background="@drawable/fundo_caixa_texto"
             android:padding="16dp"
             android:textColor="@android:color/white"
@@ -45,14 +45,14 @@
             android:id="@+id/text_email"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/text_usuario"
+            android:layout_below="@+id/edit_login_senha"
             android:layout_alignParentStart="true"
             android:layout_alignParentLeft="true"
             android:layout_marginTop="10dp"
             android:background="@drawable/fundo_caixa_texto"
             android:inputType=""
             android:padding="16dp"
-            android:text="Digite seu e-mail"
+            android:hint="Digite seu e-mail"
             android:textColor="@android:color/white"
             android:textColorHint="@android:color/white" />
 
@@ -88,11 +88,9 @@
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceSmall"
             android:text="Já tem conta? Faça o login"
-            android:id="@+id/textView2"
+            android:id="@+id/text_faca_login"
             android:layout_below="@+id/button_cadastrar"
-            android:layout_centerHorizontal="true"
-            android:onClick="abrirLoginUsuario"
-            />
+            android:layout_centerHorizontal="true" />
 
     </RelativeLayout>
 

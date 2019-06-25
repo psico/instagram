@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.parse.ParseException;
@@ -19,6 +20,7 @@ public class CadastroActivity extends AppCompatActivity {
     private EditText textoUsuario;
     private EditText textoEmail;
     private EditText textoSenha;
+    private TextView facaLogin;
     private Button botaoCadastrar;
 
     @Override
@@ -26,9 +28,10 @@ public class CadastroActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_cadastro);
 
-        textoUsuario = (EditText) findViewById(R.id.text_usuario);
+        textoUsuario = (EditText) findViewById(R.id.edit_login_senha);
         textoEmail = (EditText) findViewById(R.id.text_email);
         textoSenha = (EditText) findViewById(R.id.text_senha);
+        facaLogin = (TextView) findViewById(R.id.text_faca_login);
         botaoCadastrar = (Button) findViewById(R.id.button_cadastrar);
 
         botaoCadastrar.setOnClickListener(new View.OnClickListener() {
@@ -37,6 +40,13 @@ public class CadastroActivity extends AppCompatActivity {
                 cadastrarUsuario();
             }
         });
+        facaLogin.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                abrirLoginUsuario();
+            }
+        });
+
     }
 
     private void cadastrarUsuario() {
@@ -63,8 +73,9 @@ public class CadastroActivity extends AppCompatActivity {
         });
     }
 
-    public void abrirLoginUsuario(View view) {
+    public void abrirLoginUsuario() {
         Intent intent = new Intent(CadastroActivity.this, LoginActivity.class);
         startActivity(intent);
+        finish();
     }
 }
