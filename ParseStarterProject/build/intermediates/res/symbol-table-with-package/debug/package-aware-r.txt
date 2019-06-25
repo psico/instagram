@@ -305,6 +305,7 @@ color bright_foreground_material_dark
 color bright_foreground_material_light
 color button_material_dark
 color button_material_light
+color colorPrimary
 color dim_foreground_disabled_material_dark
 color dim_foreground_disabled_material_light
 color dim_foreground_material_dark
@@ -474,6 +475,7 @@ drawable abc_textfield_search_material
 drawable fundo_botao
 drawable fundo_caixa_texto
 drawable fundo_degrade
+drawable instagramlogo
 drawable logo
 drawable notification_template_icon_bg
 drawable usuario
@@ -485,6 +487,8 @@ id action_bar_root
 id action_bar_spinner
 id action_bar_subtitle
 id action_bar_title
+id action_compartilhar
+id action_configuracoes
 id action_context_bar
 id action_divider
 id action_menu_divider
@@ -492,14 +496,13 @@ id action_menu_presenter
 id action_mode_bar
 id action_mode_bar_stub
 id action_mode_close_button
-id action_settings
+id action_sair
 id activity_chooser_view_content
 id alertTitle
 id always
 id barrier
 id beginning
 id bottom
-id button2
 id buttonPanel
 id button_cadastrar
 id button_logar
@@ -594,6 +597,7 @@ id text_senha
 id time
 id title
 id title_template
+id toolbar_principal
 id top
 id topPanel
 id up
@@ -646,6 +650,7 @@ layout select_dialog_item_material
 layout select_dialog_multichoice_material
 layout select_dialog_singlechoice_material
 layout support_simple_spinner_dropdown_item
+layout toolbar
 menu menu_main
 mipmap ic_launcher
 string abc_action_bar_home_description
@@ -665,7 +670,9 @@ string abc_searchview_description_voice
 string abc_shareactionprovider_share_with
 string abc_shareactionprovider_share_with_application
 string abc_toolbar_collapse_description
-string action_settings
+string action_compartilhar
+string action_configuracoes
+string action_sair
 string app_name
 string botao_logar
 string crie_conta

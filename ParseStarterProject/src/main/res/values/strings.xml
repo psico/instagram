@@ -13,7 +13,11 @@
     <string name="app_name">Instagram</string>
 
     <string name="hello_world">Hello World!</string>
-    <string name="action_settings">Settings</string>
+
+    <string name="action_configuracoes">Configurações</string>
+    <string name="action_sair">Sair</string>
+    <string name="action_compartilhar">Compartilhar</string>
+
     <string name="botao_logar">Logar</string>
     <string name="crie_conta">Não tem conta? crie uma!</string>
     <string name="digite_o_seu_usu_rio">Digite o seu usuário</string>
