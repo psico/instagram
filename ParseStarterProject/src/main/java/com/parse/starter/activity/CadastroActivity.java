@@ -53,6 +53,7 @@ public class CadastroActivity extends AppCompatActivity {
             public void done(ParseException e) {
                 if (e == null) {
                     Toast.makeText(CadastroActivity.this, "Cadastro feito com sucesso!", Toast.LENGTH_LONG).show();
+                    abrirLoginUsuario();
                 } else {
                     ParseErros parseErros = new ParseErros();
                     String erro = parseErros.getErro(e.getCode());
