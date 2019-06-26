@@ -8,6 +8,7 @@
  */
 package com.parse.starter.activity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
 import android.support.v7.app.AppCompatActivity;
@@ -34,25 +35,45 @@ import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
 
-  private Toolbar toolbarPrincipal;
+    private Toolbar toolbarPrincipal;
 
-  @Override
-  protected void onCreate(Bundle savedInstanceState) {
-    super.onCreate(savedInstanceState);
-    setContentView(R.layout.activity_main);
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
 
-    //Configurar toolbar
-    toolbarPrincipal = (Toolbar) findViewById(R.id.toolbar_principal);
-    toolbarPrincipal.setLogo(R.drawable.instagramlogo);
-    setSupportActionBar(toolbarPrincipal);
+        //Configurar toolbar
+        toolbarPrincipal = (Toolbar) findViewById(R.id.toolbar_principal);
+        toolbarPrincipal.setLogo(R.drawable.instagramlogo);
+        setSupportActionBar(toolbarPrincipal);
 
-  }
+    }
 
-  @Override
-  public boolean onCreateOptionsMenu(Menu menu) {
-    MenuInflater inflater = getMenuInflater();
-    inflater.inflate(R.menu.menu_main, menu);
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.menu_main, menu);
 
-    return true;
-  }
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+
+        switch (item.getItemId()) {
+            case R.id.action_sair:
+                deslogarUsuario();
+                return true;
+            case R.id.action_compartilhar:
+                return true;
+            default:
+                return super.onOptionsItemSelected(item);
+        }
+    }
+
+    private void deslogarUsuario() {
+        ParseUser.logOut();
+        Intent intent = new Intent(this, LoginActivity.class);
+        startActivity(intent);
+    }
 }
