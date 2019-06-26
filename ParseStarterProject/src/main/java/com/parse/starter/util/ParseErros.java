@@ -1,4 +1,4 @@
-package com.parse.starter.activity.util;
+package com.parse.starter.util;
 
 import java.util.HashMap;
 

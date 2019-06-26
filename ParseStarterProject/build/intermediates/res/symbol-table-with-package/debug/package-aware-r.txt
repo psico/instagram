@@ -475,6 +475,7 @@ drawable abc_textfield_search_material
 drawable fundo_botao
 drawable fundo_caixa_texto
 drawable fundo_degrade
+drawable ic_action_camera
 drawable instagramlogo
 drawable logo
 drawable notification_template_icon_bg
@@ -576,6 +577,7 @@ id shortcut
 id showCustom
 id showHome
 id showTitle
+id sliding_tab_layout
 id split_action_bar
 id spread
 id spread_inside
@@ -602,6 +604,7 @@ id top
 id topPanel
 id up
 id useLogo
+id view_pager_main
 id withText
 id wrap
 id wrap_content

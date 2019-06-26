@@ -6,57 +6,54 @@
     density="420dpi"
     format="10"
     plugin-version="3.4.1"
-    timestamp="1561480366456"
+    timestamp="1561569552193"
     token="-3257359779231762200"
-    verifier="BINARY_MANIFEST_FILE_CHANGE" >
+    verifier="CLASS_ADDED" >
 
     <task
         name="javac"
-        duration="1429" />
+        duration="435" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="151" />
+        duration="58" />
     <task
         name="verifier"
-        duration="132" />
+        duration="88" />
 
     <artifact
         location="D:\Users\joao.rodrigues\AndroidStudioProjects\Parse-Projeto-1.13.0\ParseStarterProject\build\intermediates\resources\instant-run\debug\resources-debug.apk"
         type="SPLIT" />
     <artifact
-        location="D:\Users\joao.rodrigues\AndroidStudioProjects\Parse-Projeto-1.13.0\ParseStarterProject\build\intermediates\split-apk\debug\slices\slice_9.apk"
+        location="D:\Users\joao.rodrigues\AndroidStudioProjects\Parse-Projeto-1.13.0\ParseStarterProject\build\intermediates\split-apk\debug\slices\slice_2.apk"
         type="SPLIT" />
     <artifact
         location="D:\Users\joao.rodrigues\AndroidStudioProjects\Parse-Projeto-1.13.0\ParseStarterProject\build\intermediates\split-apk\debug\slices\slice_8.apk"
         type="SPLIT" />
     <artifact
-        location="D:\Users\joao.rodrigues\AndroidStudioProjects\Parse-Projeto-1.13.0\ParseStarterProject\build\intermediates\split-apk\debug\slices\slice_2.apk"
+        location="D:\Users\joao.rodrigues\AndroidStudioProjects\Parse-Projeto-1.13.0\ParseStarterProject\build\intermediates\split-apk\debug\slices\slice_9.apk"
         type="SPLIT" />
     <artifact
-        location="D:\Users\joao.rodrigues\AndroidStudioProjects\Parse-Projeto-1.13.0\ParseStarterProject\build\intermediates\split-apk\debug\slices\slice_1.apk"
+        location="D:\Users\joao.rodrigues\AndroidStudioProjects\Parse-Projeto-1.13.0\ParseStarterProject\build\intermediates\split-apk\debug\slices\slice_5.apk"
         type="SPLIT" />
-    <artifact
-        location="D:\Users\joao.rodrigues\AndroidStudioProjects\Parse-Projeto-1.13.0\ParseStarterProject\build\intermediates\instant-run-apk\debug\ParseStarterProject-debug.apk"
-        type="SPLIT_MAIN" />
 
     <build
         build-mode="FULL"
-        timestamp="1561479812704"
+        timestamp="1561565140378"
         verifier="FULL_BUILD_REQUESTED" >
         <artifact
             location="D:\Users\joao.rodrigues\AndroidStudioProjects\Parse-Projeto-1.13.0\ParseStarterProject\build\intermediates\resources\instant-run\debug\resources-debug.apk"
             type="SPLIT" />
         <artifact
-            location="D:\Users\joao.rodrigues\AndroidStudioProjects\Parse-Projeto-1.13.0\ParseStarterProject\build\intermediates\split-apk\debug\slices\slice_2.apk"
+            location="D:\Users\joao.rodrigues\AndroidStudioProjects\Parse-Projeto-1.13.0\ParseStarterProject\build\intermediates\split-apk\debug\slices\slice_9.apk"
             type="SPLIT" />
         <artifact
             location="D:\Users\joao.rodrigues\AndroidStudioProjects\Parse-Projeto-1.13.0\ParseStarterProject\build\intermediates\split-apk\debug\slices\slice_8.apk"
             type="SPLIT" />
         <artifact
-            location="D:\Users\joao.rodrigues\AndroidStudioProjects\Parse-Projeto-1.13.0\ParseStarterProject\build\intermediates\split-apk\debug\slices\slice_9.apk"
+            location="D:\Users\joao.rodrigues\AndroidStudioProjects\Parse-Projeto-1.13.0\ParseStarterProject\build\intermediates\split-apk\debug\slices\slice_2.apk"
             type="SPLIT" />
         <artifact
             location="D:\Users\joao.rodrigues\AndroidStudioProjects\Parse-Projeto-1.13.0\ParseStarterProject\build\intermediates\split-apk\debug\slices\slice_1.apk"
@@ -88,26 +85,34 @@
     </build>
     <build
         build-mode="COLD"
-        timestamp="1561480366456"
-        verifier="BINARY_MANIFEST_FILE_CHANGE" >
+        timestamp="1561567025390"
+        verifier="CLASS_ADDED" >
+        <artifact
+            location="D:\Users\joao.rodrigues\AndroidStudioProjects\Parse-Projeto-1.13.0\ParseStarterProject\build\intermediates\split-apk\debug\dep\dependencies.apk"
+            type="SPLIT" />
+        <artifact
+            location="D:\Users\joao.rodrigues\AndroidStudioProjects\Parse-Projeto-1.13.0\ParseStarterProject\build\intermediates\split-apk\debug\slices\slice_0.apk"
+            type="SPLIT" />
+    </build>
+    <build
+        build-mode="COLD"
+        timestamp="1561569552193"
+        verifier="CLASS_ADDED" >
         <artifact
             location="D:\Users\joao.rodrigues\AndroidStudioProjects\Parse-Projeto-1.13.0\ParseStarterProject\build\intermediates\resources\instant-run\debug\resources-debug.apk"
-            type="SPLIT" />
-        <artifact
-            location="D:\Users\joao.rodrigues\AndroidStudioProjects\Parse-Projeto-1.13.0\ParseStarterProject\build\intermediates\split-apk\debug\slices\slice_9.apk"
-            type="SPLIT" />
-        <artifact
-            location="D:\Users\joao.rodrigues\AndroidStudioProjects\Parse-Projeto-1.13.0\ParseStarterProject\build\intermediates\split-apk\debug\slices\slice_8.apk"
             type="SPLIT" />
         <artifact
             location="D:\Users\joao.rodrigues\AndroidStudioProjects\Parse-Projeto-1.13.0\ParseStarterProject\build\intermediates\split-apk\debug\slices\slice_2.apk"
             type="SPLIT" />
         <artifact
-            location="D:\Users\joao.rodrigues\AndroidStudioProjects\Parse-Projeto-1.13.0\ParseStarterProject\build\intermediates\split-apk\debug\slices\slice_1.apk"
+            location="D:\Users\joao.rodrigues\AndroidStudioProjects\Parse-Projeto-1.13.0\ParseStarterProject\build\intermediates\split-apk\debug\slices\slice_8.apk"
             type="SPLIT" />
         <artifact
-            location="D:\Users\joao.rodrigues\AndroidStudioProjects\Parse-Projeto-1.13.0\ParseStarterProject\build\intermediates\instant-run-apk\debug\ParseStarterProject-debug.apk"
-            type="SPLIT_MAIN" />
+            location="D:\Users\joao.rodrigues\AndroidStudioProjects\Parse-Projeto-1.13.0\ParseStarterProject\build\intermediates\split-apk\debug\slices\slice_9.apk"
+            type="SPLIT" />
+        <artifact
+            location="D:\Users\joao.rodrigues\AndroidStudioProjects\Parse-Projeto-1.13.0\ParseStarterProject\build\intermediates\split-apk\debug\slices\slice_5.apk"
+            type="SPLIT" />
     </build>
 
 </instant-run>

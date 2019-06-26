@@ -13,7 +13,7 @@ import com.parse.ParseException;
 import com.parse.ParseUser;
 import com.parse.SignUpCallback;
 import com.parse.starter.R;
-import com.parse.starter.activity.util.ParseErros;
+import com.parse.starter.util.ParseErros;
 
 public class CadastroActivity extends AppCompatActivity {
 

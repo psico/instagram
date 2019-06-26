@@ -10,32 +10,24 @@ package com.parse.starter.activity;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.v7.app.ActionBarActivity;
+import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
-import android.util.Log;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 
-import com.parse.FindCallback;
-import com.parse.GetCallback;
-import com.parse.LogInCallback;
-import com.parse.ParseAnalytics;
-import com.parse.ParseException;
-import com.parse.ParseObject;
-import com.parse.ParseQuery;
 import com.parse.ParseUser;
-import com.parse.SaveCallback;
-import com.parse.SignUpCallback;
 import com.parse.starter.R;
-
-import java.util.List;
+import com.parse.starter.adapter.TabsAdapter;
+import com.parse.starter.util.SlidingTabLayout;
 
 
 public class MainActivity extends AppCompatActivity {
 
     private Toolbar toolbarPrincipal;
+    private SlidingTabLayout slidingTabLayout;
+    private ViewPager viewPager;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -46,6 +38,13 @@ public class MainActivity extends AppCompatActivity {
         toolbarPrincipal = (Toolbar) findViewById(R.id.toolbar_principal);
         toolbarPrincipal.setLogo(R.drawable.instagramlogo);
         setSupportActionBar(toolbarPrincipal);
+
+        //Configurar abas (selecionar os componentes da tela)
+        slidingTabLayout = (SlidingTabLayout) findViewById(R.id.sliding_tab_layout);
+        viewPager = (ViewPager) findViewById(R.id.view_pager_main);
+
+        //configurar adpater
+        TabsAdapter tabsAdapter = new TabsAdapter( getSupportFragmentManager(), this);
 
     }
 
