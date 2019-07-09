@@ -12,6 +12,7 @@ public class TabsAdapter extends FragmentStatePagerAdapter {
     public TabsAdapter(FragmentManager fm, Context c) {
         super(fm);
         this.context = c;
+
     }
 
     @Override

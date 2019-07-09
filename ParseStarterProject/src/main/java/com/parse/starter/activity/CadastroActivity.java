@@ -17,6 +17,7 @@ import com.parse.starter.util.ParseErros;
 
 public class CadastroActivity extends AppCompatActivity {
 
+
     private EditText textoUsuario;
     private EditText textoEmail;
     private EditText textoSenha;

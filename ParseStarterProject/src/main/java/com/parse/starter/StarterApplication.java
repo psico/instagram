@@ -25,6 +25,7 @@ public class StarterApplication extends Application {
     public void onCreate() {
         super.onCreate();
 
+
         // Habilite armazenamento local.
         Parse.enableLocalDatastore(this);
 

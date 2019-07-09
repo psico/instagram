@@ -15,6 +15,7 @@ import com.parse.starter.R;
 
 public class LoginActivity extends AppCompatActivity {
 
+
     private EditText editLoginUsuario;
     private EditText editLoginSenha;
     private Button botaoLogar;

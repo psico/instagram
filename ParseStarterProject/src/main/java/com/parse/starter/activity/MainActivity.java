@@ -25,6 +25,7 @@ import com.parse.starter.util.SlidingTabLayout;
 
 public class MainActivity extends AppCompatActivity {
 
+
     private Toolbar toolbarPrincipal;
     private SlidingTabLayout slidingTabLayout;
     private ViewPager viewPager;
