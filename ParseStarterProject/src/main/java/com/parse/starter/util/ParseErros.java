@@ -4,6 +4,11 @@ import java.util.HashMap;
 
 public class ParseErros {
 
+
+
+
+
+
     private HashMap<Integer, String> erros;
 
     public ParseErros() {
