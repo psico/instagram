@@ -1,7 +1,10 @@
 package com.parse.starter.util;
 
 import android.content.Context;
+import android.content.res.Resources;
 import android.graphics.Typeface;
+import android.graphics.drawable.Drawable;
+import android.media.Image;
 import android.support.v4.view.PagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.util.AttributeSet;
@@ -12,8 +15,11 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.HorizontalScrollView;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+
+import com.parse.starter.R;
 
 public class SlidingTabLayout extends HorizontalScrollView {
     /**
@@ -143,7 +149,7 @@ public class SlidingTabLayout extends HorizontalScrollView {
         getContext().getTheme().resolveAttribute(android.R.attr.selectableItemBackground,
                 outValue, true);
         textView.setBackgroundResource(outValue.resourceId);
-        textView.setAllCaps(true);
+//        textView.setAllCaps(true);
 
         int padding = (int) (TAB_VIEW_PADDING_DIPS * getResources().getDisplayMetrics().density);
         textView.setPadding(padding, padding, padding, padding);
@@ -157,13 +163,15 @@ public class SlidingTabLayout extends HorizontalScrollView {
 
         for (int i = 0; i < adapter.getCount(); i++) {
             View tabView = null;
-            TextView tabTitleView = null;
+//            TextView tabTitleView = null;
+            ImageView tabTitleView = null;
 
             if (mTabViewLayoutId != 0) {
                 // If there is a custom tab view layout id set, try and inflate it
                 tabView = LayoutInflater.from(getContext()).inflate(mTabViewLayoutId, mTabStrip,
                         false);
-                tabTitleView = (TextView) tabView.findViewById(mTabViewTextViewId);
+//                tabTitleView = (TextView) tabView.findViewById(mTabViewTextViewId);
+                tabTitleView = (ImageView) tabView.findViewById(mTabViewTextViewId);
             }
 
             if (tabView == null) {
@@ -171,7 +179,8 @@ public class SlidingTabLayout extends HorizontalScrollView {
             }
 
             if (tabTitleView == null && TextView.class.isInstance(tabView)) {
-                tabTitleView = (TextView) tabView;
+//                tabTitleView = (TextView) tabView;
+                tabTitleView = (ImageView) tabView;
             }
 
             if (mDistributeEvenly) {
@@ -180,7 +189,8 @@ public class SlidingTabLayout extends HorizontalScrollView {
                 lp.weight = 1;
             }
 
-            tabTitleView.setText(adapter.getPageTitle(i));
+//            tabTitleView.setText(adapter.getPageTitle(i));
+            tabTitleView.setImageResource(Integer.parseInt(adapter.getPageTitle(i).toString()));
             tabView.setOnClickListener(tabClickListener);
             String desc = mContentDescriptions.get(i, null);
             if (desc != null) {

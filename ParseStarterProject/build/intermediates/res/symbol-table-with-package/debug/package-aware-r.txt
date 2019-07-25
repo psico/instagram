@@ -477,6 +477,8 @@ drawable fundo_botao
 drawable fundo_caixa_texto
 drawable fundo_degrade
 drawable ic_action_camera
+drawable ic_action_home
+drawable ic_people
 drawable instagramlogo
 drawable logo
 drawable notification_template_icon_bg

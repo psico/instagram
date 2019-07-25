@@ -2285,10 +2285,12 @@ public final class R {
     public static final int fundo_caixa_texto=0x7f06003c;
     public static final int fundo_degrade=0x7f06003d;
     public static final int ic_action_camera=0x7f06003e;
-    public static final int instagramlogo=0x7f06003f;
-    public static final int logo=0x7f060040;
-    public static final int notification_template_icon_bg=0x7f060041;
-    public static final int usuario=0x7f060042;
+    public static final int ic_action_home=0x7f06003f;
+    public static final int ic_people=0x7f060040;
+    public static final int instagramlogo=0x7f060041;
+    public static final int logo=0x7f060042;
+    public static final int notification_template_icon_bg=0x7f060043;
+    public static final int usuario=0x7f060044;
   }
   public static final class id {
     public static final int action0=0x7f070000;
