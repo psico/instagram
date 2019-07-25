@@ -305,6 +305,7 @@ color bright_foreground_material_dark
 color bright_foreground_material_light
 color button_material_dark
 color button_material_light
+color cinzaEscuro
 color colorPrimary
 color dim_foreground_disabled_material_dark
 color dim_foreground_disabled_material_light
@@ -593,8 +594,10 @@ id text
 id text2
 id textSpacerNoButtons
 id textView
+id textView2
 id text_email
 id text_faca_login
+id text_item_tab
 id text_senha
 id time
 id title
@@ -641,6 +644,8 @@ layout abc_simple_dropdown_hint
 layout activity_cadastro
 layout activity_login
 layout activity_main
+layout fragment_home
+layout fragment_usuarios
 layout notification_media_action
 layout notification_media_cancel_action
 layout notification_template_big_media
@@ -653,6 +658,7 @@ layout select_dialog_item_material
 layout select_dialog_multichoice_material
 layout select_dialog_singlechoice_material
 layout support_simple_spinner_dropdown_item
+layout tabs_view
 layout toolbar
 menu menu_main
 mipmap ic_launcher
@@ -681,6 +687,7 @@ string botao_logar
 string crie_conta
 string digite_a_sua_senha
 string digite_o_seu_usu_rio
+string hello_blank_fragment
 string hello_world
 string logo_instagram
 string parse_app_id
