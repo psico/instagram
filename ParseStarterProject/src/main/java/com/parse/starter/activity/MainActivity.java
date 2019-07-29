@@ -10,19 +10,33 @@ package com.parse.starter.activity;
 
 import android.content.Context;
 import android.content.Intent;
+import android.graphics.Bitmap;
+import android.net.Uri;
 import android.os.Bundle;
+import android.provider.MediaStore;
 import android.support.v4.content.ContextCompat;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
+import android.widget.Toast;
 
+import com.parse.ParseException;
+import com.parse.ParseFile;
+import com.parse.ParseObject;
 import com.parse.ParseUser;
+import com.parse.SaveCallback;
 import com.parse.starter.R;
 import com.parse.starter.adapter.TabsAdapter;
 import com.parse.starter.util.SlidingTabLayout;
+
+import java.io.ByteArrayOutputStream;
+import java.io.IOException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 
 
 public class MainActivity extends AppCompatActivity {
@@ -72,9 +86,67 @@ public class MainActivity extends AppCompatActivity {
                 deslogarUsuario();
                 return true;
             case R.id.action_compartilhar:
+                compartilharFoto();
                 return true;
             default:
                 return super.onOptionsItemSelected(item);
+        }
+    }
+
+    private void compartilharFoto() {
+        Intent intent = new Intent(Intent.ACTION_PICK, MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
+        startActivityForResult(intent, 1);
+    }
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        Log.i("onActivityResult", "onActivityResult");
+
+        //Testar processo de retorno dos dados
+        if (requestCode==1 && resultCode == RESULT_OK && data != null) {
+
+            //recuperar local do recurso
+            Uri localImagemSelecionada = data.getData();
+
+            //recupera a imagem do local que foi selecionada
+            try {
+                Bitmap imagem = MediaStore.Images.Media.getBitmap(getContentResolver(), localImagemSelecionada);
+
+                //comprimir no formato PNG
+                ByteArrayOutputStream stream = new ByteArrayOutputStream();
+                imagem.compress(Bitmap.CompressFormat.PNG, 75, stream);
+                //Cria um array de bytes da imagem
+                byte[] byteArray = stream.toByteArray();
+
+                //Criar um arquivo com formato próprio do parse
+                SimpleDateFormat dateFormat = new SimpleDateFormat("ddmmaaaahhmmss");
+                String nomeImagem = dateFormat.format(new Date());
+                ParseFile arquivoParse = new ParseFile(nomeImagem + "imagem.png", byteArray);
+
+                //Monta objeto para salvar no parse
+                ParseObject parseObject = new ParseObject("Imagem");
+                parseObject.put("username", ParseUser.getCurrentUser().getUsername());
+                parseObject.put("imagem", arquivoParse);
+
+
+                //salvar os dados
+                parseObject.saveInBackground(new SaveCallback() {
+                    @Override
+                    public void done(ParseException e) {
+
+                        if (e==null) { //sucesso
+                            Toast.makeText(getApplicationContext(), "Sua imagem foi postada!!!", Toast.LENGTH_LONG).show();
+                        } else { //erro
+                            Toast.makeText(getApplicationContext(), "Erro ao postar sua imagem - Tente novamente!", Toast.LENGTH_LONG).show();
+                        }
+                    }
+                });
+
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+
         }
     }
 
