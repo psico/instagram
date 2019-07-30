@@ -31,6 +31,7 @@ import com.parse.ParseUser;
 import com.parse.SaveCallback;
 import com.parse.starter.R;
 import com.parse.starter.adapter.TabsAdapter;
+import com.parse.starter.fragments.HomeFragment;
 import com.parse.starter.util.SlidingTabLayout;
 
 import java.io.ByteArrayOutputStream;
@@ -61,7 +62,7 @@ public class MainActivity extends AppCompatActivity {
         viewPager = (ViewPager) findViewById(R.id.view_pager_main);
 
         //configurar adpater
-        TabsAdapter tabsAdapter = new TabsAdapter( getSupportFragmentManager(), this);
+        TabsAdapter tabsAdapter = new TabsAdapter(getSupportFragmentManager(), this);
         viewPager.setAdapter(tabsAdapter);
         slidingTabLayout.setCustomTabView(R.layout.tabs_view, R.id.text_item_tab);
         slidingTabLayout.setDistributeEvenly(true);
@@ -104,7 +105,7 @@ public class MainActivity extends AppCompatActivity {
         Log.i("onActivityResult", "onActivityResult");
 
         //Testar processo de retorno dos dados
-        if (requestCode==1 && resultCode == RESULT_OK && data != null) {
+        if (requestCode == 1 && resultCode == RESULT_OK && data != null) {
 
             //recuperar local do recurso
             Uri localImagemSelecionada = data.getData();
@@ -135,8 +136,14 @@ public class MainActivity extends AppCompatActivity {
                     @Override
                     public void done(ParseException e) {
 
-                        if (e==null) { //sucesso
+                        if (e == null) { //sucesso
                             Toast.makeText(getApplicationContext(), "Sua imagem foi postada!!!", Toast.LENGTH_LONG).show();
+
+                            //Atualizar a listagem de itens do Fragmento HomeFragment
+                            TabsAdapter adapterNovo = (TabsAdapter) viewPager.getAdapter();
+                            HomeFragment homeFragmentNovo = (HomeFragment) adapterNovo.getFragment(0);
+                            homeFragmentNovo.atualizaPostagens();
+
                         } else { //erro
                             Toast.makeText(getApplicationContext(), "Erro ao postar sua imagem - Tente novamente!", Toast.LENGTH_LONG).show();
                         }

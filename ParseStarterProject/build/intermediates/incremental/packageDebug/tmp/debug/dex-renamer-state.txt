@@ -1,4 +1,4 @@
-#Mon Jul 29 09:16:20 BRT 2019
+#Tue Jul 30 08:46:23 BRT 2019
 base.0=/root/StudioProjects/instagram/ParseStarterProject/build/intermediates/dex/debug/mergeDexDebug/out
 path.0=classes.dex
 renamed.0=classes.dex

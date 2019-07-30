@@ -8,23 +8,29 @@ import android.support.v4.app.FragmentStatePagerAdapter;
 import android.support.v4.content.ContextCompat;
 import android.text.SpannableString;
 import android.text.style.ImageSpan;
+import android.view.ViewGroup;
 
 import com.parse.starter.R;
 import com.parse.starter.fragments.HomeFragment;
 import com.parse.starter.fragments.UsuariosFragment;
 
+import java.util.HashMap;
+
 public class TabsAdapter extends FragmentStatePagerAdapter {
 
     private Context context;
-//    private String[] abas = new String[]{"HOME", "USUÁRIOS"};
+    //    private String[] abas = new String[]{"HOME", "USUÁRIOS"};
     private int[] icones = new int[]{R.drawable.ic_action_home, R.drawable.ic_people};
     private int tamanhoIcone;
+    private HashMap<Integer, Fragment> fragmentUtilizados;
 
     public TabsAdapter(FragmentManager fm, Context c) {
         super(fm);
         this.context = c;
         double escala = this.context.getResources().getDisplayMetrics().density;
-        tamanhoIcone =  (int) (36 * escala);
+        tamanhoIcone = (int) (36 * escala);
+
+        this.fragmentUtilizados = new HashMap<>();
 
     }
 
@@ -36,6 +42,7 @@ public class TabsAdapter extends FragmentStatePagerAdapter {
         switch (position) {
             case 0:
                 fragment = new HomeFragment();
+                fragmentUtilizados.put(position, fragment);
                 break;
             case 1:
                 fragment = new UsuariosFragment();
@@ -43,6 +50,16 @@ public class TabsAdapter extends FragmentStatePagerAdapter {
         }
 
         return fragment;
+    }
+
+    @Override
+    public void destroyItem(ViewGroup container, int position, Object object) {
+        super.destroyItem(container, position, object);
+        fragmentUtilizados.remove(position);
+    }
+
+    public Fragment getFragment(Integer indice) {
+        return fragmentUtilizados.get(indice);
     }
 
     @Override

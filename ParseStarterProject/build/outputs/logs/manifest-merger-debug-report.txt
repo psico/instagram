@@ -8,6 +8,8 @@ MERGED from [com.android.support:appcompat-v7:22.2.0] /root/.gradle/caches/trans
 MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /root/.gradle/caches/transforms-2/files-2.1/1503482653f57aae2b51f9745d5b8b81/AndroidManifest.xml:2:1-11:12
 MERGED from [com.android.support:recyclerview-v7:22.2.0] /root/.gradle/caches/transforms-2/files-2.1/8c15f06de1f3d7b6645c8f209f956bb4/AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:support-v4:23.0.0] /root/.gradle/caches/transforms-2/files-2.1/df6f425a0545ab9fcb7789607ee7a92d/AndroidManifest.xml:17:1-24:12
+MERGED from [com.squareup.picasso:picasso:2.71828] /root/.gradle/caches/transforms-2/files-2.1/3297577c17663c5b502a6d71709b96e4/AndroidManifest.xml:2:1-14:12
+MERGED from [com.android.support:exifinterface:27.1.0] /root/.gradle/caches/transforms-2/files-2.1/c7c66f333dd66cf6ea5cdee7794620c8/AndroidManifest.xml:17:1-22:12
 INJECTED from /root/StudioProjects/instagram/ParseStarterProject/src/main/AndroidManifest.xml:2:1-36:12
 INJECTED from /root/StudioProjects/instagram/ParseStarterProject/src/main/AndroidManifest.xml:2:1-36:12
 INJECTED from /root/StudioProjects/instagram/ParseStarterProject/src/main/AndroidManifest.xml:2:1-36:12
@@ -45,6 +47,8 @@ MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /root/.grad
 MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /root/.gradle/caches/transforms-2/files-2.1/1503482653f57aae2b51f9745d5b8b81/AndroidManifest.xml:9:5-20
 MERGED from [com.android.support:support-v4:23.0.0] /root/.gradle/caches/transforms-2/files-2.1/df6f425a0545ab9fcb7789607ee7a92d/AndroidManifest.xml:22:5-20
 MERGED from [com.android.support:support-v4:23.0.0] /root/.gradle/caches/transforms-2/files-2.1/df6f425a0545ab9fcb7789607ee7a92d/AndroidManifest.xml:22:5-20
+MERGED from [com.squareup.picasso:picasso:2.71828] /root/.gradle/caches/transforms-2/files-2.1/3297577c17663c5b502a6d71709b96e4/AndroidManifest.xml:7:5-12:19
+MERGED from [com.squareup.picasso:picasso:2.71828] /root/.gradle/caches/transforms-2/files-2.1/3297577c17663c5b502a6d71709b96e4/AndroidManifest.xml:7:5-12:19
 	android:label
 		ADDED from /root/StudioProjects/instagram/ParseStarterProject/src/main/AndroidManifest.xml:13:9-41
 	android:icon
@@ -103,6 +107,10 @@ MERGED from [com.android.support:recyclerview-v7:22.2.0] /root/.gradle/caches/tr
 MERGED from [com.android.support:recyclerview-v7:22.2.0] /root/.gradle/caches/transforms-2/files-2.1/8c15f06de1f3d7b6645c8f209f956bb4/AndroidManifest.xml:20:5-43
 MERGED from [com.android.support:support-v4:23.0.0] /root/.gradle/caches/transforms-2/files-2.1/df6f425a0545ab9fcb7789607ee7a92d/AndroidManifest.xml:20:5-43
 MERGED from [com.android.support:support-v4:23.0.0] /root/.gradle/caches/transforms-2/files-2.1/df6f425a0545ab9fcb7789607ee7a92d/AndroidManifest.xml:20:5-43
+MERGED from [com.squareup.picasso:picasso:2.71828] /root/.gradle/caches/transforms-2/files-2.1/3297577c17663c5b502a6d71709b96e4/AndroidManifest.xml:5:5-44
+MERGED from [com.squareup.picasso:picasso:2.71828] /root/.gradle/caches/transforms-2/files-2.1/3297577c17663c5b502a6d71709b96e4/AndroidManifest.xml:5:5-44
+MERGED from [com.android.support:exifinterface:27.1.0] /root/.gradle/caches/transforms-2/files-2.1/c7c66f333dd66cf6ea5cdee7794620c8/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:exifinterface:27.1.0] /root/.gradle/caches/transforms-2/files-2.1/c7c66f333dd66cf6ea5cdee7794620c8/AndroidManifest.xml:20:5-44
 INJECTED from /root/StudioProjects/instagram/ParseStarterProject/src/main/AndroidManifest.xml
 INJECTED from /root/StudioProjects/instagram/ParseStarterProject/src/main/AndroidManifest.xml
 	android:targetSdkVersion
@@ -113,3 +121,11 @@ INJECTED from /root/StudioProjects/instagram/ParseStarterProject/src/main/Androi
 		INJECTED from /root/StudioProjects/instagram/ParseStarterProject/src/main/AndroidManifest.xml
 		ADDED from /root/StudioProjects/instagram/ParseStarterProject/src/main/AndroidManifest.xml
 		INJECTED from /root/StudioProjects/instagram/ParseStarterProject/src/main/AndroidManifest.xml
+provider#com.squareup.picasso.PicassoProvider
+ADDED from [com.squareup.picasso:picasso:2.71828] /root/.gradle/caches/transforms-2/files-2.1/3297577c17663c5b502a6d71709b96e4/AndroidManifest.xml:8:9-11:40
+	android:authorities
+		ADDED from [com.squareup.picasso:picasso:2.71828] /root/.gradle/caches/transforms-2/files-2.1/3297577c17663c5b502a6d71709b96e4/AndroidManifest.xml:10:13-72
+	android:exported
+		ADDED from [com.squareup.picasso:picasso:2.71828] /root/.gradle/caches/transforms-2/files-2.1/3297577c17663c5b502a6d71709b96e4/AndroidManifest.xml:11:13-37
+	android:name
+		ADDED from [com.squareup.picasso:picasso:2.71828] /root/.gradle/caches/transforms-2/files-2.1/3297577c17663c5b502a6d71709b96e4/AndroidManifest.xml:9:13-64

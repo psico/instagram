@@ -541,6 +541,7 @@ id ifRoom
 id image
 id imageView
 id imageView2
+id image_lista_postagem
 id info
 id invisible
 id item_touch_helper_previous_elevation
@@ -549,6 +550,7 @@ id line1
 id line3
 id listMode
 id list_item
+id list_postagens_home
 id media_actions
 id middle
 id multiply
@@ -648,6 +650,7 @@ layout activity_login
 layout activity_main
 layout fragment_home
 layout fragment_usuarios
+layout lista_postagem
 layout notification_media_action
 layout notification_media_cancel_action
 layout notification_template_big_media
