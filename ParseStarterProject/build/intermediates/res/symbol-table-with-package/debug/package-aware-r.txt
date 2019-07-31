@@ -798,6 +798,7 @@ layout support_simple_spinner_dropdown_item
 layout tabs_view
 layout toolbar
 menu menu_main
+mipmap ic_instagram
 mipmap ic_launcher
 string abc_action_bar_home_description
 string abc_action_bar_home_description_format

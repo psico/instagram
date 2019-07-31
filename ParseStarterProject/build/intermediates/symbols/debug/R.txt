@@ -797,7 +797,8 @@ int layout support_simple_spinner_dropdown_item 0x7f090036
 int layout tabs_view 0x7f090037
 int layout toolbar 0x7f090038
 int menu menu_main 0x7f0a0000
-int mipmap ic_launcher 0x7f0b0000
+int mipmap ic_instagram 0x7f0b0000
+int mipmap ic_launcher 0x7f0b0001
 int string abc_action_bar_home_description 0x7f0c0000
 int string abc_action_bar_home_description_format 0x7f0c0001
 int string abc_action_bar_home_subtitle_description_format 0x7f0c0002

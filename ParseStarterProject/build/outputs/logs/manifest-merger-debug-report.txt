@@ -55,7 +55,7 @@ MERGED from [com.squareup.picasso:picasso:2.71828] /root/.gradle/caches/transfor
 	android:label
 		ADDED from /root/StudioProjects/instagram/ParseStarterProject/src/main/AndroidManifest.xml:13:9-41
 	android:icon
-		ADDED from /root/StudioProjects/instagram/ParseStarterProject/src/main/AndroidManifest.xml:12:9-43
+		ADDED from /root/StudioProjects/instagram/ParseStarterProject/src/main/AndroidManifest.xml:12:9-44
 	android:allowBackup
 		ADDED from /root/StudioProjects/instagram/ParseStarterProject/src/main/AndroidManifest.xml:11:9-35
 	android:theme
