@@ -4,7 +4,7 @@
             "outputFile": "/root/StudioProjects/instagram/ParseStarterProject/build/intermediates/incremental/mergeDebugResources/merged.dir/values-w600dp-v13/values-w600dp-v13.xml",
             "map": [
                 {
-                    "source": "/root/.gradle/caches/transforms-2/files-2.1/bc769442b7273550e238331c00f21a01/res/values-w600dp/values-w600dp.xml",
+                    "source": "/root/.gradle/caches/transforms-2/files-2.1/c7035d10c1e0b3ee6426b8fe192f4e1e/res/values-w600dp/values-w600dp.xml",
                     "from": {
                         "startLines": "4,5",
                         "startColumns": "4,4",
