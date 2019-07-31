@@ -9,7 +9,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/list_usuario"
-        android:divider="@color/cinzaEscuro"
+        android:divider="@color/cinza"
         android:dividerHeight="1dp"
         android:layout_gravity="center_horizontal|top"></ListView>
 
