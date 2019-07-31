@@ -5,13 +5,12 @@
     android:layout_height="match_parent"
     tools:context=".fragments.UsuariosFragment">
 
-    <TextView
-        android:id="@+id/textView2"
+    <ListView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textAppearance="@style/TextAppearance.AppCompat.Large"
-        android:text="USUÁRIOS"
-        android:textColor="@android:color/black"
-        android:layout_gravity="center"/>
+        android:id="@+id/list_usuario"
+        android:divider="@color/cinzaEscuro"
+        android:dividerHeight="1dp"
+        android:layout_gravity="center_horizontal|top"></ListView>
 
 </FrameLayout>

@@ -1,28 +1,6 @@
 {
     "logs": [
         {
-            "outputFile": "/root/StudioProjects/instagram/ParseStarterProject/build/intermediates/res/merged/debug/values-hi_values-hi.arsc.flat",
-            "map": [
-                {
-                    "source": "/root/.gradle/caches/transforms-2/files-2.1/bc769442b7273550e238331c00f21a01/res/values-hi/values-hi.xml",
-                    "from": {
-                        "startLines": "4,5,6,7,8,9,10,11,12,13,14,15,16",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "291,406,511,618,703,805,927,1036,1138,1236,1346,1446,1561",
-                        "endColumns": "114,104,106,84,101,121,108,101,97,109,99,114,124",
-                        "endOffsets": "401,506,613,698,800,922,1031,1133,1231,1341,1441,1556,1681"
-                    },
-                    "to": {
-                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "55,170,275,382,467,569,691,800,902,1000,1110,1210,1325",
-                        "endColumns": "114,104,106,84,101,121,108,101,97,109,99,114,124",
-                        "endOffsets": "165,270,377,462,564,686,795,897,995,1105,1205,1320,1445"
-                    }
-                }
-            ]
-        },
-        {
             "outputFile": "/root/StudioProjects/instagram/ParseStarterProject/build/intermediates/res/merged/debug/values-cs_values-cs.arsc.flat",
             "map": [
                 {
@@ -40,6 +18,28 @@
                         "startOffsets": "55,162,264,373,459,564,681,785,894,993,1099,1209,1316",
                         "endColumns": "106,101,108,85,104,116,103,108,98,105,109,106,121",
                         "endOffsets": "157,259,368,454,559,676,780,889,988,1094,1204,1311,1433"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "/root/StudioProjects/instagram/ParseStarterProject/build/intermediates/res/merged/debug/values-hi_values-hi.arsc.flat",
+            "map": [
+                {
+                    "source": "/root/.gradle/caches/transforms-2/files-2.1/bc769442b7273550e238331c00f21a01/res/values-hi/values-hi.xml",
+                    "from": {
+                        "startLines": "4,5,6,7,8,9,10,11,12,13,14,15,16",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "291,406,511,618,703,805,927,1036,1138,1236,1346,1446,1561",
+                        "endColumns": "114,104,106,84,101,121,108,101,97,109,99,114,124",
+                        "endOffsets": "401,506,613,698,800,922,1031,1133,1231,1341,1441,1556,1681"
+                    },
+                    "to": {
+                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,170,275,382,467,569,691,800,902,1000,1110,1210,1325",
+                        "endColumns": "114,104,106,84,101,121,108,101,97,109,99,114,124",
+                        "endOffsets": "165,270,377,462,564,686,795,897,995,1105,1205,1320,1445"
                     }
                 }
             ]

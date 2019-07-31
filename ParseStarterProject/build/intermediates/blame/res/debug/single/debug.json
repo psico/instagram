@@ -20,12 +20,12 @@
         "source": "/root/.gradle/caches/transforms-2/files-2.1/bc769442b7273550e238331c00f21a01/res/drawable-xxxhdpi/abc_spinner_mtrl_am_alpha.9.png"
     },
     {
-        "merged": "/root/StudioProjects/instagram/ParseStarterProject/build/intermediates/res/merged/debug/drawable-mdpi_abc_tab_indicator_mtrl_alpha.9.png.flat",
-        "source": "/root/.gradle/caches/transforms-2/files-2.1/bc769442b7273550e238331c00f21a01/res/drawable-mdpi/abc_tab_indicator_mtrl_alpha.9.png"
-    },
-    {
         "merged": "/root/StudioProjects/instagram/ParseStarterProject/build/intermediates/res/merged/debug/drawable-hdpi_abc_ab_share_pack_mtrl_alpha.9.png.flat",
         "source": "/root/.gradle/caches/transforms-2/files-2.1/bc769442b7273550e238331c00f21a01/res/drawable-hdpi/abc_ab_share_pack_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "/root/StudioProjects/instagram/ParseStarterProject/build/intermediates/res/merged/debug/drawable-mdpi_abc_tab_indicator_mtrl_alpha.9.png.flat",
+        "source": "/root/.gradle/caches/transforms-2/files-2.1/bc769442b7273550e238331c00f21a01/res/drawable-mdpi/abc_tab_indicator_mtrl_alpha.9.png"
     },
     {
         "merged": "/root/StudioProjects/instagram/ParseStarterProject/build/intermediates/res/merged/debug/drawable-xhdpi_abc_textfield_search_activated_mtrl_alpha.9.png.flat",
@@ -64,12 +64,12 @@
         "source": "/root/.gradle/caches/transforms-2/files-2.1/bc769442b7273550e238331c00f21a01/res/drawable-hdpi/abc_ic_voice_search_api_mtrl_alpha.png"
     },
     {
-        "merged": "/root/StudioProjects/instagram/ParseStarterProject/build/intermediates/res/merged/debug/drawable-ldrtl-mdpi_abc_ic_menu_cut_mtrl_alpha.png.flat",
-        "source": "/root/.gradle/caches/transforms-2/files-2.1/bc769442b7273550e238331c00f21a01/res/drawable-ldrtl-mdpi/abc_ic_menu_cut_mtrl_alpha.png"
-    },
-    {
         "merged": "/root/StudioProjects/instagram/ParseStarterProject/build/intermediates/res/merged/debug/drawable-xxhdpi_ic_people.png.flat",
         "source": "/root/StudioProjects/instagram/ParseStarterProject/src/main/res/drawable-xxhdpi/ic_people.png"
+    },
+    {
+        "merged": "/root/StudioProjects/instagram/ParseStarterProject/build/intermediates/res/merged/debug/drawable-ldrtl-mdpi_abc_ic_menu_cut_mtrl_alpha.png.flat",
+        "source": "/root/.gradle/caches/transforms-2/files-2.1/bc769442b7273550e238331c00f21a01/res/drawable-ldrtl-mdpi/abc_ic_menu_cut_mtrl_alpha.png"
     },
     {
         "merged": "/root/StudioProjects/instagram/ParseStarterProject/build/intermediates/res/merged/debug/drawable-hdpi_abc_popup_background_mtrl_mult.9.png.flat",
@@ -172,12 +172,12 @@
         "source": "/root/.gradle/caches/transforms-2/files-2.1/bc769442b7273550e238331c00f21a01/res/drawable-hdpi/abc_ic_menu_paste_mtrl_am_alpha.png"
     },
     {
-        "merged": "/root/StudioProjects/instagram/ParseStarterProject/build/intermediates/res/merged/debug/drawable-hdpi_abc_ic_go_search_api_mtrl_alpha.png.flat",
-        "source": "/root/.gradle/caches/transforms-2/files-2.1/bc769442b7273550e238331c00f21a01/res/drawable-hdpi/abc_ic_go_search_api_mtrl_alpha.png"
-    },
-    {
         "merged": "/root/StudioProjects/instagram/ParseStarterProject/build/intermediates/res/merged/debug/drawable-mdpi_abc_ic_search_api_mtrl_alpha.png.flat",
         "source": "/root/.gradle/caches/transforms-2/files-2.1/bc769442b7273550e238331c00f21a01/res/drawable-mdpi/abc_ic_search_api_mtrl_alpha.png"
+    },
+    {
+        "merged": "/root/StudioProjects/instagram/ParseStarterProject/build/intermediates/res/merged/debug/drawable-hdpi_abc_ic_go_search_api_mtrl_alpha.png.flat",
+        "source": "/root/.gradle/caches/transforms-2/files-2.1/bc769442b7273550e238331c00f21a01/res/drawable-hdpi/abc_ic_go_search_api_mtrl_alpha.png"
     },
     {
         "merged": "/root/StudioProjects/instagram/ParseStarterProject/build/intermediates/res/merged/debug/drawable-xxhdpi_abc_btn_switch_to_on_mtrl_00012.9.png.flat",
@@ -234,6 +234,10 @@
     {
         "merged": "/root/StudioProjects/instagram/ParseStarterProject/build/intermediates/res/merged/debug/layout_select_dialog_item_material.xml.flat",
         "source": "/root/.gradle/caches/transforms-2/files-2.1/bc769442b7273550e238331c00f21a01/res/layout/select_dialog_item_material.xml"
+    },
+    {
+        "merged": "/root/StudioProjects/instagram/ParseStarterProject/build/intermediates/res/merged/debug/layout_lista_usuarios.xml.flat",
+        "source": "/root/StudioProjects/instagram/ParseStarterProject/src/main/res/layout/lista_usuarios.xml"
     },
     {
         "merged": "/root/StudioProjects/instagram/ParseStarterProject/build/intermediates/res/merged/debug/layout_abc_activity_chooser_view.xml.flat",

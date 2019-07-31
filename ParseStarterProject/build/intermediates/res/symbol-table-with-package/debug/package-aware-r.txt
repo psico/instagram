@@ -551,6 +551,7 @@ id line3
 id listMode
 id list_item
 id list_postagens_home
+id list_usuario
 id media_actions
 id middle
 id multiply
@@ -598,11 +599,11 @@ id text
 id text2
 id textSpacerNoButtons
 id textView
-id textView2
 id text_email
 id text_faca_login
 id text_item_tab
 id text_senha
+id text_username
 id time
 id title
 id title_template
@@ -651,6 +652,7 @@ layout activity_main
 layout fragment_home
 layout fragment_usuarios
 layout lista_postagem
+layout lista_usuarios
 layout notification_media_action
 layout notification_media_cancel_action
 layout notification_template_big_media
